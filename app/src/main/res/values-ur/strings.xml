@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">آو 2 جاؤ</string>
+
+
+    <string name="username">صارف نام</string>
+    <string name="pWord">پاس ورڈ</string>
+    <string name="loginBtnTxt">لاگ ان کریں</string>
+    <string name="signUpTxt">کھاتہ نہیں ہے کیا؟ سائن اپ</string>
+    <string name="cLTxt">زبان تبدیل کریں</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">2 आना</string>
+
+
+    <string name="username">उपयोगकर्ता नाम</string>
+    <string name="pWord">पारण शब्द</string>
+    <string name="loginBtnTxt">लॉग इन करें</string>
+    <string name="signUpTxt">कोई खाता नहीं है? साइन अप करें</string>
+    <string name="cLTxt">भाषा बदलो</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Komm 2 geh</string>
+
+    <string name="username">Nutzername</string>
+    <string name="pWord">Passwort</string>
+    <string name="loginBtnTxt">Einloggen</string>
+    <string name="signUpTxt">Haben Sie kein Konto? Anmelden</string>
+    <string name="cLTxt">Sprache ändern</string>
+</resources>
