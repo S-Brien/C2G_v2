@@ -46,17 +46,18 @@
         android:layout_marginTop="400dp"
         android:background="#CDDC39"
         android:text="@string/loginBtnTxt"
-        android:layout_width="65sp"
+        android:layout_width="100sp"
         android:layout_height="30sp"
         android:id="@+id/logBtn"
         />
 
     <TextView
         android:layout_width="220sp"
-        android:layout_height="30sp"
+        android:layout_height="45sp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="440dp"
         android:textColor="#cddc39"
+        android:textSize="14sp"
         android:text="@string/signUpTxt"
         android:id="@+id/signTxt"
         />
