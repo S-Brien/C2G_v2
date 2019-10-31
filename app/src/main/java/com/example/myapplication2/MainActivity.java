@@ -38,6 +38,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button profileTestButton = findViewById(R.id.profileTestButton);
+        profileTestButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+
+                startActivity(new Intent(getApplicationContext(), ProfilePage.class));
+            }
+        });
+
         TextView textView = (TextView)findViewById(R.id.signTxt);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override

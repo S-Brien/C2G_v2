@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="#FF5722">
+    android:background="#595959">
 
     <TextView
         android:layout_width="wrap_content"
@@ -73,6 +73,17 @@
         android:id="@+id/changeMyLang"
         />
 
+    <Button
+        android:id="@+id/profileTestButton"
+        android:layout_width="127dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="145dp"
+        android:layout_marginBottom="348dp"
+        android:background="#CDDC39"
+        android:text="Profile Test" />
 
 
 </RelativeLayout>
