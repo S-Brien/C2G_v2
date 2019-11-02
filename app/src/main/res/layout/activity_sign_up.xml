@@ -8,11 +8,11 @@
     tools:context=".SignUp">
 
     <TextView
+        android:id="@+id/companyName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/companyName"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:text="Come2Go©"
         android:textColor="#FFEB3B"
         android:textSize="50sp"
@@ -21,6 +21,84 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/usernameFieldLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="155dp"
+        android:text="Username:"
+        android:textColor="#F3EFEF"  />
+
+    <TextView
+        android:id="@+id/emailAddressField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginBottom="375dp"
+        android:text="E-mail:"
+        android:textColor="#F3EFEF"  />
+
+    <TextView
+        android:id="@+id/passwordFieldLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="270dp"
+        android:text="Password:"
+        android:textColor="#F3EFEF" />
+
+    <EditText
+        android:id="@+id/usernameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="142dp"
+        android:layout_marginEnd="43dp"
+        android:ems="10"
+        android:hint="Choose a Username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="41dp"
+        android:ems="10"
+        android:hint="Enter E-mail Address"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="251dp"
+        android:layout_marginEnd="39dp"
+        android:ems="10"
+        android:hint="Choose password"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/signupButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="222dp"
+        android:text="Sign Up" />
 
 
 </RelativeLayout>

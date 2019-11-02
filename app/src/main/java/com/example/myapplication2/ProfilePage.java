@@ -1,6 +1,8 @@
 package com.example.myapplication2;
 
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
@@ -11,18 +13,27 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import android.database.sqlite.SQLiteOpenHelper;
 
 public class ProfilePage extends AppCompatActivity {
 
     public static final int PICK_IMAGE = 1;
     public static final int EDIT_TEXT = 2;
     Intent intent;
-    TextView bio;
+    TextView bio, usernameLabel;
     EditText editBio;
+    public static final String DATABASE_NAME = "Account Database";
+    public static final String TABLE_NAME = "Account_Info";
+
+    public static SQLiteDatabase  myDB;
+
+    public EditText editUsername, editEmail, editPassword;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
 
 
         super.onCreate(savedInstanceState);
@@ -44,6 +55,12 @@ public class ProfilePage extends AppCompatActivity {
             }
         });
 
+        //editUsername = findViewById(R.id.editUsername);
+        //editEmail = findViewById(R.id.editEmail);
+        //editPassword = findViewById(R.id.editPassword);
+        //usernameLabel = findViewById(R.id.usernameLabel);
+
+        //addInfoToProfileFields();
 
     }
 
@@ -73,4 +90,22 @@ public class ProfilePage extends AppCompatActivity {
             avatar.setImageURI(fullPhotoUri);
         }
     }
+
+    /*public void addInfoToProfileFields(){
+
+        myDB = openOrCreateDatabase(DATABASE_NAME,MODE_PRIVATE,null);
+
+        Cursor resultUsername = myDB.rawQuery("SELECT USERNAME FROM [" + TABLE_NAME + "] WHERE ID = 0", null);
+        Cursor resultEmail = myDB.rawQuery("SELECT EMAIL FROM [" + TABLE_NAME + "] WHERE ID = 0", null);
+        Cursor resultPassword = myDB.rawQuery("SELECT PASSWORD FROM [" + TABLE_NAME + "] WHERE ID = 0", null);
+        resultUsername.moveToFirst();
+        resultPassword.moveToFirst();
+        resultEmail.moveToFirst();
+
+        String username = resultUsername.getString(0);
+        usernameLabel.setText(username);
+
+
+    }*/
+
 }
