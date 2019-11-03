@@ -7,4 +7,16 @@
     <string name="loginBtnTxt">Login</string>
     <string name="signUpTxt">Do Not Have an Account? Sign Up</string>
     <string name="cLTxt">Change Language</string>
+    <string name="upAvatar">Update Avatar</string>
+    <string name="editBio">Edit Biography</string>
+    <string name="bio">Biography</string>
+    <string name="UpBio">Update Biography</string>
+    <string name="email">Email:</string>
+    <string name="newPass">New Password</string>
+    <string name="upPass">Update Password</string>
+    <string name="uName">Username:</string>
+    <string name="editUsername">Edit Username</string>
+    <string name="upMail">Update Email</string>
+    <string name="dispEmail">This will display the email from the database</string>
+    <string name="HelloMy">Hello my name is Aaron</string>
 </resources>

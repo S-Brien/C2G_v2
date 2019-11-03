@@ -8,4 +8,18 @@
     <string name="loginBtnTxt">लॉग इन करें</string>
     <string name="signUpTxt">कोई खाता नहीं है? साइन अप करें</string>
     <string name="cLTxt">भाषा बदलो</string>
+
+    <!-- Profile View Page Language Changes-->
+    <string name="upAvatar">अवतार अद्यतन करें</string>
+    <string name="editBio">जीवनी संपादित करें</string>
+    <string name="bio">जीवनी</string>
+    <string name="UpBio">अद्यतन जीवनी</string>
+    <string name="email">ईमेल:</string>
+    <string name="newPass">नया पासवर्ड</string>
+    <string name="upPass">पासवर्ड अपडेट करें</string>
+    <string name="uName">उपयोगकर्ता नाम:</string>
+    <string name="editUsername">उपयोगकर्ता नाम संपादित करें</string>
+    <string name="upMail">ईमेल अपडेट करें</string>
+    <string name="dispEmail">यह डेटाबेस से ईमेल प्रदर्शित करेगा</string>
+    <string name="HelloMy">हेलो मेरा नाम आरोन है</string>
 </resources>

@@ -7,4 +7,18 @@
     <string name="loginBtnTxt">Einloggen</string>
     <string name="signUpTxt">Haben Sie kein Konto? Anmelden</string>
     <string name="cLTxt">Sprache ändern</string>
+
+    <!-- Profile View Page Language Changes-->
+    <string name="upAvatar">Avatar aktualisieren</string>
+    <string name="editBio">Biografie bearbeiten</string>
+    <string name="bio">Biografie</string>
+    <string name="UpBio">Biografie aktualisieren</string>
+    <string name="email">Email:</string>
+    <string name="newPass">Neues Passwort</string>
+    <string name="upPass">Passwort erneuern</string>
+    <string name="uName">Nutzername:</string>
+    <string name="editUsername">Benutzername bearbeiten</string>
+    <string name="upMail">E-Mail aktualisieren</string>
+    <string name="dispEmail">Dadurch wird die E-Mail aus der Datenbank angezeigt</string>
+    <string name="HelloMy">Hallo mein Name ist Aaron</string>
 </resources>
