@@ -83,7 +83,7 @@
         android:layout_marginEnd="143dp"
         android:layout_marginBottom="310dp"
         android:background="#CDDC39"
-        android:text="Profile Test" />
+        android:text="@string/profile_test" />
 
     <Button
         android:id="@+id/databaseButton"
@@ -92,7 +92,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="183dp"
-        android:text="Database Test" />
+        android:text="@string/dbTest" />
 
     <TextView
         android:id="@+id/usernameTest"
@@ -102,7 +102,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="165dp"
         android:layout_marginTop="42dp"
-        android:text="Username Test"
+        android:text="@string/userN_Test"
         android:textColor="#FFFFFF" />
 
 

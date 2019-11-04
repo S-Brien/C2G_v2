@@ -2,12 +2,15 @@
 <resources>
     <string name="app_name">آو 2 جاؤ</string>
 
-
+    <!-- Main/Home Page Language -->
     <string name="username">صارف نام</string>
-    <string name="pWord">پاس ورڈ</string>
+    <string name="pWord">پاس ورڈ:</string>
     <string name="loginBtnTxt">لاگ ان کریں</string>
     <string name="signUpTxt">کھاتہ نہیں ہے کیا؟ سائن اپ</string>
     <string name="cLTxt">زبان تبدیل کریں</string>
+    <string name="profile_test">پروفائل ٹیسٹ</string>
+    <string name="dbTest">ڈیٹا بیس ٹیسٹ</string>
+    <string name="userN_Test">صارف کا نام ٹیسٹ</string>
 
     <!-- Profile View Page Language Changes-->
     <string name="upAvatar">اوتار اپ ڈیٹ کریں</string>
@@ -22,4 +25,13 @@
     <string name="upMail">ای میل کو اپ ڈیٹ کریں</string>
     <string name="dispEmail">یہ ڈیٹا بیس سے ای میل ظاہر کرے گا</string>
     <string name="HelloMy">ہیلو میرا نام ہارون ہے</string>
+    <string name="upPassword">پاس ورڈ کو اپ ڈیٹ کریں:</string>
+
+
+    <!-- Sign-Up Page Language Changes -->
+    <string name="chooseUname">ایک صارف نام منتخب کریں</string>
+    <string name="enterEmail">ای میل ایڈریس درج کریں</string>
+    <string name="choosePass">خفیہ کوڈ کا انتخاب کیجیئے</string>
+    <string name="sUp">سائن اپ</string>
+
 </resources>

@@ -29,7 +29,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="73dp"
         android:layout_marginTop="155dp"
-        android:text="Username:"
+        android:text="@string/uName"
         android:textColor="#F3EFEF"  />
 
     <TextView
@@ -40,7 +40,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="74dp"
         android:layout_marginBottom="375dp"
-        android:text="E-mail:"
+        android:text="@string/email"
         android:textColor="#F3EFEF"  />
 
     <TextView
@@ -51,7 +51,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="77dp"
         android:layout_marginTop="270dp"
-        android:text="Password:"
+        android:text="@string/pWord"
         android:textColor="#F3EFEF" />
 
     <EditText
@@ -63,7 +63,7 @@
         android:layout_marginTop="142dp"
         android:layout_marginEnd="43dp"
         android:ems="10"
-        android:hint="Choose a Username"
+        android:hint="@string/chooseUname"
         android:inputType="textPersonName" />
 
     <EditText
@@ -75,7 +75,7 @@
         android:layout_marginTop="198dp"
         android:layout_marginEnd="41dp"
         android:ems="10"
-        android:hint="Enter E-mail Address"
+        android:hint="@string/enterEmail"
         android:inputType="textPersonName" />
 
     <EditText
@@ -87,7 +87,7 @@
         android:layout_marginTop="251dp"
         android:layout_marginEnd="39dp"
         android:ems="10"
-        android:hint="Choose password"
+        android:hint="@string/choosePass"
         android:inputType="textPersonName" />
 
     <Button
@@ -98,7 +98,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="140dp"
         android:layout_marginBottom="222dp"
-        android:text="Sign Up" />
+        android:text="@string/sUp" />
 
 
 

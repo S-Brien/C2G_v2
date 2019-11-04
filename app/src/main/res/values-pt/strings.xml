@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">vem 2 vai</string>
+
+    <!-- Main/Home Page Language -->
+    <string name="username">Nome de usuário</string>
+    <string name="pWord">Senha:</string>
+    <string name="loginBtnTxt">Conecte-se</string>
+    <string name="signUpTxt">Não tem uma conta? Inscrever-se</string>
+    <string name="cLTxt">Mudar idioma</string>
+    <string name="profile_test">Teste de perfil</string>
+    <string name="dbTest">Teste de banco de dados</string>
+    <string name="userN_Test">Teste de nome de usuário</string>
+
+    <!-- Profile View Page Language Changes-->
+    <string name="upAvatar">Atualizar Avatar</string>
+    <string name="editBio">Editar biografia</string>
+    <string name="bio">Biografia</string>
+    <string name="UpBio">Atualizar biografia</string>
+    <string name="email">O email:</string>
+    <string name="newPass">Nova senha</string>
+    <string name="upPass">Atualizar senha</string>
+    <string name="uName">Nome de usuário:</string>
+    <string name="editUsername">Editar nome de usuário</string>
+    <string name="upMail">Atualizar E-mail</string>
+    <string name="dispEmail">Isso exibirá o email do banco de dados</string>
+    <string name="HelloMy">Olá, meu nome é Aaron</string>
+    <string name="upPassword">Atualizar senha:</string>
+
+
+    <!-- Sign-Up Page Language Changes -->
+    <string name="chooseUname">Escolha um nome de usuário</string>
+    <string name="enterEmail">Insira o endereço de e-mail</string>
+    <string name="choosePass">Escolha a senha</string>
+    <string name="sUp">Inscrever-se</string>
+
+</resources>

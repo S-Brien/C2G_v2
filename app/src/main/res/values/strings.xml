@@ -1,12 +1,17 @@
 <resources>
     <string name="app_name">Come2Go</string>
 
-
+    <!-- Main/Home Page Language -->
     <string name="username">Username</string>
-    <string name="pWord">Password</string>
+    <string name="pWord">Password:</string>
     <string name="loginBtnTxt">Login</string>
     <string name="signUpTxt">Do Not Have an Account? Sign Up</string>
     <string name="cLTxt">Change Language</string>
+    <string name="profile_test">Profile Test</string>
+    <string name="dbTest">Database Test</string>
+    <string name="userN_Test">Username Test</string>
+
+    <!-- Profile View Page Language Changes-->
     <string name="upAvatar">Update Avatar</string>
     <string name="editBio">Edit Biography</string>
     <string name="bio">Biography</string>
@@ -19,4 +24,13 @@
     <string name="upMail">Update Email</string>
     <string name="dispEmail">This will display the email from the database</string>
     <string name="HelloMy">Hello my name is Aaron</string>
+    <string name="upPassword">Update Password:</string>
+
+
+    <!-- Sign-Up Page Language Changes -->
+    <string name="chooseUname">Choose a Username</string>
+    <string name="enterEmail">Enter E-mail Address</string>
+    <string name="choosePass">Choose password</string>
+    <string name="sUp">Sign Up</string>
+
 </resources>

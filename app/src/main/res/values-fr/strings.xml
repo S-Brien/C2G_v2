@@ -2,12 +2,15 @@
 <resources>
     <string name="app_name">Viens 2 va</string>
 
-
+    <!-- Main/Home Page Language -->
     <string name="username">Nom d\'utilisateur</string>
-    <string name="pWord">Mot de passe</string>
+    <string name="pWord">Mot de passe:</string>
     <string name="loginBtnTxt">S\'identifier</string>
     <string name="signUpTxt">Vous n\'avez pas de compte? S\'inscrire</string>
     <string name="cLTxt">Changer de langue</string>
+    <string name="profile_test">Test de profil</string>
+    <string name="dbTest">Test de base de données</string>
+    <string name="userN_Test">Test de nom d\'utilisateur</string>
 
     <!-- Profile View Page Language Changes-->
     <string name="upAvatar">Mettre à jour l\'avatar</string>
@@ -22,4 +25,12 @@
     <string name="upMail">Mettre à jour l\'email</string>
     <string name="dispEmail">Cela affichera l\'email de la base de données</string>
     <string name="HelloMy">Bonjour je m\'appelle Aaron</string>
+    <string name="upPassword">Mettre à jour le mot de passe:</string>
+
+
+    <!-- Sign-Up Page Language Changes -->
+    <string name="chooseUname">Choisissez un nom d\'utilisateur</string>
+    <string name="enterEmail">Entrer l\'adresse e-mail</string>
+    <string name="choosePass">Choisissez un mot de passe</string>
+    <string name="sUp">S\'inscrire</string>
 </resources>

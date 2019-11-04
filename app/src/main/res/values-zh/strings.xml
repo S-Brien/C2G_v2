@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">來吧</string>
+
+    <!-- Main/Home Page Language -->
+    <string name="username">用戶名</string>
+    <string name="pWord">密碼：</string>
+    <string name="loginBtnTxt">登錄</string>
+    <string name="signUpTxt">還沒有賬號？ 註冊</string>
+    <string name="cLTxt">改變語言</string>
+    <string name="profile_test">輪廓測試</string>
+    <string name="dbTest">數據庫測試</string>
+    <string name="userN_Test">用戶名測試</string>
+
+    <!-- Profile View Page Language Changes-->
+    <string name="upAvatar">更新頭像</string>
+    <string name="editBio">編輯傳記</string>
+    <string name="bio">傳</string>
+    <string name="UpBio">更新傳記</string>
+    <string name="email">電子郵件：</string>
+    <string name="newPass">新密碼</string>
+    <string name="upPass">更新密碼</string>
+    <string name="uName">用戶名：</string>
+    <string name="editUsername">修改用戶名</string>
+    <string name="upMail">更新電郵</string>
+    <string name="dispEmail">這將顯示數據庫中的電子郵件</string>
+    <string name="HelloMy">你好，我叫亞倫</string>
+    <string name="upPassword">更新密碼:</string>
+
+
+    <!-- Sign-Up Page Language Changes -->
+    <string name="chooseUname">選擇一個用戶名</string>
+    <string name="enterEmail">請輸入電郵地址</string>
+    <string name="choosePass">選擇密碼</string>
+    <string name="sUp">註冊</string>
+
+</resources>
