@@ -71,6 +71,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), SignUp.class));
             }
         });
+        TextView textV = (TextView)findViewById(R.id.helpTxt);
+        textV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(getApplicationContext(), SignUp.class));
+            }
+        });
 
 
     }
@@ -146,6 +154,9 @@ public class MainActivity extends AppCompatActivity {
         String language = prefs.getString("My Lang", "");
         setLocale(language);
     }
+
+
+
 }
 
 
