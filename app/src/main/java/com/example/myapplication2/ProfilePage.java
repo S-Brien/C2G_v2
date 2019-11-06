@@ -55,6 +55,15 @@ public class ProfilePage extends AppCompatActivity {
             }
         });
 
+        TextView textV = (TextView)findViewById(R.id.helpTxt);
+        textV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(getApplicationContext(), HelpPage.class));
+            }
+        });
+
         //editUsername = findViewById(R.id.editUsername);
         //editEmail = findViewById(R.id.editEmail);
         //editPassword = findViewById(R.id.editPassword);
@@ -84,6 +93,7 @@ public class ProfilePage extends AppCompatActivity {
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
 
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == PICK_IMAGE) {
             ImageView avatar = findViewById(R.id.avatar);
             Uri fullPhotoUri = data.getData();

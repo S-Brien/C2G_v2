@@ -71,12 +71,13 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), SignUp.class));
             }
         });
+
         TextView textV = (TextView)findViewById(R.id.helpTxt);
         textV.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v)
             {
-                startActivity(new Intent(getApplicationContext(), SignUp.class));
+                startActivity(new Intent(getApplicationContext(), HelpPage.class));
             }
         });
 

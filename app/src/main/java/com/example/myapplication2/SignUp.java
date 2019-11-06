@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class SignUp extends AppCompatActivity {
@@ -22,15 +23,26 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
         myDB = new DatabaseManager(this);
 
-    editUsername = (EditText)findViewById(R.id.usernameField);
-    editEmail = (EditText)findViewById(R.id.emailField);
-    editPassword = (EditText)findViewById(R.id.passwordField);
 
-    addDataButton = (Button)findViewById(R.id.signupButton);
-    profile = new ProfilePage();
-    addData();
 
-}
+        editUsername = (EditText)findViewById(R.id.usernameField);
+        editEmail = (EditText)findViewById(R.id.emailField);
+        editPassword = (EditText)findViewById(R.id.passwordField);
+
+        addDataButton = (Button)findViewById(R.id.signupButton);
+        profile = new ProfilePage();
+        addData();
+
+        TextView textV2 = (TextView)findViewById(R.id.helpTxt1);
+        textV2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(getApplicationContext(), HelpPage.class));
+            }
+        });
+
+    }
 
     public void addData() {
         addDataButton.setOnClickListener((new View.OnClickListener() {
