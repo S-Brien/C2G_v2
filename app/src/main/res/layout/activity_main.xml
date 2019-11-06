@@ -105,5 +105,15 @@
         android:text="@string/userN_Test"
         android:textColor="#FFFFFF" />
 
+    <Button
+        android:id="@+id/mapBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginEnd="139dp"
+        android:text="Map" />
+
 
 </RelativeLayout>

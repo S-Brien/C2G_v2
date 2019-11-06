@@ -61,6 +61,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Button mapBtn = findViewById(R.id.mapBtn);
+        mapBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(getApplicationContext(), Map.class));
+            }
+        });
+
 
 
         TextView textView = (TextView)findViewById(R.id.signTxt);
