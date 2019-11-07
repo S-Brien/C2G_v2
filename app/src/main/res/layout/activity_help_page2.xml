@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#595959">
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Come2Go©"
+        android:textColor="#FFEB3B"
+        android:textSize="50sp"
+        />
+
+    <EditText
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:id="@+id/hName1"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:background="#ffffff"
+        android:layout_marginLeft="15dp"
+        />
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500sp"
+        android:id="@+id/helpBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send" />
+
+    <EditText
+        android:layout_marginTop="220dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/editText"
+        android:hint="Email"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginLeft="15dp"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:layout_marginTop="285dp"
+        android:id="@+id/hMsg"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="Please send a message or query"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>
