@@ -85,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 if(i == 0){
                     //French
                     setLocale("fr");
-                    recreate();
+                git stash    recreate();
                 }
                 else if(i == 1){
                     //Hindi

@@ -61,9 +61,14 @@ public class DatabaseManager extends SQLiteOpenHelper {
         }
     }
 
-    public void getInfo(DatabaseManager db){
+    public Cursor getInfo(){
 
-        //Cursor result = db.rawQuery("SELECT * FROM TutorialsPoint",null);
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor result = db.rawQuery("SELECT ID FROM " + TABLE_NAME + " ORDER BY ID DESC LIMIT 1", null);
+        result.moveToFirst();
+        return result;
 
     }
+
+
 }
