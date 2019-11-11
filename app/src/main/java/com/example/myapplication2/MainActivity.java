@@ -29,10 +29,6 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
 
 
-    Context context;
-
-    public static final String USER_DATABASE = "User-Database";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,6 +68,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        TextView textV = (TextView)findViewById(R.id.helpTxt);
+        textV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(getApplicationContext(), HelpPage.class));
+            }
+        });
+
 
     }
 
@@ -85,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
                 if(i == 0){
                     //French
                     setLocale("fr");
-                git stash    recreate();
+                    recreate();
                 }
                 else if(i == 1){
                     //Hindi
@@ -146,6 +151,9 @@ public class MainActivity extends AppCompatActivity {
         String language = prefs.getString("My Lang", "");
         setLocale(language);
     }
+
+
+
 }
 
 

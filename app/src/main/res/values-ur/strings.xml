@@ -33,5 +33,6 @@
     <string name="enterEmail">ای میل ایڈریس درج کریں</string>
     <string name="choosePass">خفیہ کوڈ کا انتخاب کیجیئے</string>
     <string name="sUp">سائن اپ</string>
+    <string name="helpSt">Help</string>
 
 </resources>

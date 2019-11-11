@@ -62,7 +62,14 @@ public class ProfilePage extends AppCompatActivity {
         emailLabel.setText(userEmail);
 
 
-
+        TextView textV = (TextView)findViewById(R.id.helpTxt);
+        textV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(getApplicationContext(), HelpPage.class));
+            }
+        });
 
     }
 
@@ -87,6 +94,7 @@ public class ProfilePage extends AppCompatActivity {
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
 
+        super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == PICK_IMAGE) {
             ImageView avatar = findViewById(R.id.avatar);
             Uri fullPhotoUri = data.getData();

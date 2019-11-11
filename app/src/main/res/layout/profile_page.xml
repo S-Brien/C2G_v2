@@ -79,109 +79,34 @@
         android:text="@string/editBio" />
 
     <TextView
-        android:id="@+id/emailLabel"
+        android:layout_width="220sp"
+        android:layout_height="45sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="575dp"
+        android:textColor="#cddc39"
+        android:textSize="20sp"
+        android:layout_marginStart="360dp"
+        android:text="@string/helpSt"
+        android:id="@+id/helpTxt"
+        />
+
+    <TextView
+        android:id="@+id/editUsernameLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="341dp"
-        android:text="@string/email" />
-
-    <EditText
-        android:id="@+id/editText9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginBottom="25dp"
-        android:ems="10"
-        android:hint="@string/newPass"
-        android:inputType="textPassword" />
-
-    <Button
-        android:id="@+id/UpdatePassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="21dp"
-        android:text="@string/upPass" />
-
-    <EditText
-        android:id="@+id/editPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginBottom="75dp"
-        android:ems="10"
-        android:inputType="textPassword" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="276dp"
+        android:text="Username goes here" />
 
     <TextView
-        android:id="@+id/updatePasswordLabel"
+        android:id="@+id/emailGoesHere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="22dp"
-        android:layout_marginBottom="130dp"
-        android:text="@string/upPassword" />
-
-    <EditText
-        android:id="@+id/editEmail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginBottom="160dp"
-        android:ems="10"
-        android:inputType="textEmailAddress" />
-
-    <TextView
-        android:id="@+id/emailAddress"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="369dp"
-        android:text="@string/dispEmail" />
-
-    <Button
-        android:id="@+id/editEmailButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="39dp"
-        android:layout_marginBottom="157dp"
-        android:text="@string/upMail" />
-
-    <TextView
-        android:id="@+id/usernameLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="17dp"
-        android:text="@string/uName" />
-
-    <EditText
-        android:id="@+id/editUsername"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:hint="@string/editUsername"
-        android:ems="10"
-        android:inputType="textPersonName" />
-
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="208dp"
+        android:text="Email goes here" />
 
 
 </RelativeLayout>

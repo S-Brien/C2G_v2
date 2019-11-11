@@ -10,6 +10,7 @@ import android.provider.ContactsContract;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -21,7 +22,6 @@ public class SignUp extends AppCompatActivity {
     EditText editUsername, editEmail, editPassword;
     Button addDataButton;
     ProfilePage profile;
-    User user;
     static int userID;
 
 
@@ -31,8 +31,10 @@ public class SignUp extends AppCompatActivity {
         setContentView(R.layout.activity_sign_up);
         myDB = new DatabaseManager(this);
 
+
         userArray = new ArrayList<User>();
         profile = new ProfilePage();
+
         editUsername = (EditText)findViewById(R.id.usernameField);
         editEmail = (EditText)findViewById(R.id.emailField);
         editPassword = (EditText)findViewById(R.id.passwordField);
@@ -40,35 +42,38 @@ public class SignUp extends AppCompatActivity {
         addDataButton = (Button)findViewById(R.id.signupButton);
         addData();
 
-}
+        addDataButton = (Button)findViewById(R.id.signupButton);
+        profile = new ProfilePage();
+
+        TextView textV2 = (TextView)findViewById(R.id.helpTxt1);
+
+        //This should have it's own method, like the addData() method
+        textV2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(getApplicationContext(), HelpPage.class));
+            }
+        });
+        //
+    }
 
     public void addData() {
         addDataButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //Boolean possibly causing non new user
                 boolean isInserted = myDB.insertData(editUsername.getText().toString(),
                                                      editEmail.getText().toString(),
                                                      editPassword.getText().toString() );
 
-                //Res is ID of the new customer
-                Cursor res = myDB.getInfo();
 
-                userID = res.getInt(0);
-                System.out.println("UserID = " + userID);
-                user = new User(userID,
-                                editUsername.getText().toString(),
-                                editEmail.getText().toString(),
-                                editPassword.getText().toString() );
-
-
-                userArray.add(user);
 
                 if (isInserted) {
                     Toast.makeText(SignUp.this, "Account created!", Toast.LENGTH_LONG).show();
-
-
-
-                    startActivity(new Intent(getApplicationContext(), ProfilePage.class));
+                    createUserAndAddToArray();
+                    startActivity(new Intent(getApplicationContext(), HomePage.class));
                 }
                 else {
                     Toast.makeText(SignUp.this, "Failed to create account.", Toast.LENGTH_LONG).show();
@@ -84,6 +89,26 @@ public class SignUp extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(true);
         builder.setTitle(title);
+
+    }
+
+
+
+
+    public void createUserAndAddToArray(){
+
+        //Res is ID of the new customer
+        Cursor res = myDB.getInfo();
+        userID = res.getInt(0);
+        System.out.println("UserID = " + userID);
+
+        User user = new User(userID,
+                editUsername.getText().toString(),
+                editEmail.getText().toString(),
+                editPassword.getText().toString() );
+
+
+        userArray.add(user);
 
     }
 
