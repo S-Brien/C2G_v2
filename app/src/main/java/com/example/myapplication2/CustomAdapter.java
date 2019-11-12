@@ -46,7 +46,7 @@ public class CustomAdapter extends BaseAdapter {
 
             holder = new ViewHolder();
             holder.id = (TextView)convertView.findViewById(R.id.listingID);
-            holder.address = (TextView)convertView.findViewById(R.id.listingPrice);
+            holder.address = (TextView)convertView.findViewById(R.id.listingAddress);
             holder.price = (TextView)convertView.findViewById(R.id.listingPrice);
 
             convertView.setTag(holder);
@@ -56,7 +56,7 @@ public class CustomAdapter extends BaseAdapter {
         }
 
         Listing stu = listingList.get(position);
-        //holder.id.setText(stu.getId());
+        holder.id.setText(String.valueOf(stu.getId()));
         holder.address.setText(stu.getAddress());
         holder.price.setText(stu.getPrice());
 

@@ -44,13 +44,13 @@ public class Listings extends AppCompatActivity {
 
     public void fillListview() {
 
-        ListView myListview = findViewById(R.id.myListView);
+        ListView myListView = findViewById(R.id.myListView);
         DatabaseManager dbm = new DatabaseManager(this);
 
         ArrayList<Listing> listingList = dbm.getAllData();
 
         CustomAdapter myAdapter = new CustomAdapter(listingList, this);
-        myListview.setAdapter(myAdapter);
+        myListView.setAdapter(myAdapter);
     }
 
 }

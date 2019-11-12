@@ -43,7 +43,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
 
         db.execSQL("CREATE TABLE [" + TABLE_NAME + "](ID INTEGER PRIMARY KEY AUTOINCREMENT, USERNAME TEXT, EMAIL TEXT, PASSWORD TEXT)");
-        db.execSQL("CREATE TABLE [" + LISTINGS_TABLE + "](ID INTEGER PRIMARY KEY AUTOINCREMENT, ADDRESS TEXT, PRICE TEXT)");
+        db.execSQL("CREATE TABLE [" + LISTINGS_TABLE + "](ID INTEGER PRIMARY KEY AUTOINCREMENT, ADDRESS VARCHAR, PRICE VARHCAR)");
 
     }
 
@@ -92,8 +92,10 @@ public class DatabaseManager extends SQLiteOpenHelper {
             String address = res.getString(1);
             String price = res.getString(2);
 
-            Listing newDog = new Listing(id, address, price);
-            listingList.add(newDog);
+            System.out.println("TESTING: " + id + " " + address + " " + price);
+
+            Listing newListing = new Listing(id, address, price);
+            listingList.add(newListing);
         }
         return listingList;
     }
