@@ -3,6 +3,7 @@ package com.example.myapplication2;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -12,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 
 public class Listings extends AppCompatActivity {
+
+    public static int LISTING_ID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -45,9 +48,21 @@ public class Listings extends AppCompatActivity {
     public void fillListview() {
 
         ListView myListView = findViewById(R.id.myListView);
+
         DatabaseManager dbm = new DatabaseManager(this);
 
-        ArrayList<Listing> listingList = dbm.getAllData();
+        ArrayList<Listing> listingList = dbm.getLessData();
+
+
+
+        myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Listing listing = listingList.get(position);
+                LISTING_ID = listing.getId();
+                startActivity(new Intent(getApplicationContext(), FullListingInfo.class));
+            }
+        });
 
         CustomAdapter myAdapter = new CustomAdapter(listingList, this);
         myListView.setAdapter(myAdapter);

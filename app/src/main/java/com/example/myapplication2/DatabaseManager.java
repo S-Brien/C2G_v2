@@ -43,7 +43,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
 
         db.execSQL("CREATE TABLE [" + TABLE_NAME + "](ID INTEGER PRIMARY KEY AUTOINCREMENT, USERNAME TEXT, EMAIL TEXT, PASSWORD TEXT)");
-        db.execSQL("CREATE TABLE [" + LISTINGS_TABLE + "](ID INTEGER PRIMARY KEY AUTOINCREMENT, ADDRESS VARCHAR, PRICE VARHCAR)");
+        db.execSQL("CREATE TABLE [" + LISTINGS_TABLE + "](ID INTEGER PRIMARY KEY AUTOINCREMENT, ADDRESS VARCHAR, PRICE VARHCAR, IMAGE BLOB)");
 
     }
 
@@ -82,7 +82,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
 
     }
 
-    public ArrayList<Listing> getAllData() {
+    public ArrayList<Listing> getLessData() {
         ArrayList<Listing> listingList = new ArrayList<>();
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery("select * from "+LISTINGS_TABLE,null);
@@ -91,14 +91,36 @@ public class DatabaseManager extends SQLiteOpenHelper {
             int id = res.getInt(0);   //0 is the number of id column in your database table
             String address = res.getString(1);
             String price = res.getString(2);
+            byte[] image = res.getBlob(3);
 
             System.out.println("TESTING: " + id + " " + address + " " + price);
 
-            Listing newListing = new Listing(id, address, price);
+            Listing newListing = new Listing(id, address, price, image);
             listingList.add(newListing);
         }
         return listingList;
     }
 
+    public ArrayList<Listing> getAllPropertyData() {
+
+        ArrayList<Listing> listingList = new ArrayList<>();
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select * from "+LISTINGS_TABLE,null);
+
+
+        while(res.moveToNext()) {
+            int id = res.getInt(0);   //0 is the number of id column in your database table
+            String address = res.getString(1);
+            String price = res.getString(2);
+            byte[] image = res.getBlob(3);
+
+            System.out.println("TESTING: " + id + " " + address + " " + price);
+
+            Listing newListing = new Listing(id, address, price, image);
+            listingList.add(newListing);
+        }
+
+        return listingList;
+    }
 
 }

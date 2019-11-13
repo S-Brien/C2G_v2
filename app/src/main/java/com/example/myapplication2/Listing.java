@@ -5,13 +5,23 @@ public class Listing {
     private String address;
     private String price;
     private int id;
+    private byte[] image;
 
     public Listing (){}
 
-    public Listing( int id, String address, String price) {
+    public Listing( int id, String address, String price, byte[] image) {
         this.address = address;
         this.price = price;
         this.id = id;
+        this.image = image;
+    }
+
+    public byte[] getImage() {
+        return image;
+    }
+
+    public void setImage(byte[] image) {
+        this.image = image;
     }
 
     public String getAddress() {
