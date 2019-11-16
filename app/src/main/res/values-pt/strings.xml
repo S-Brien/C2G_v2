@@ -32,6 +32,6 @@
     <string name="enterEmail">Insira o endereço de e-mail</string>
     <string name="choosePass">Escolha a senha</string>
     <string name="sUp">Inscrever-se</string>
-    <string name="helpSt">Help</string>
+    <string name="helpSt">Socorro</string>
 
 </resources>
