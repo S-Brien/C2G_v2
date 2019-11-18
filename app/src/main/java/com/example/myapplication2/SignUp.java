@@ -109,7 +109,7 @@ public class SignUp extends AppCompatActivity {
 
 
         userArray.add(user);
-        //Compare method to Listings method
+        //Compare method to ListingsPage method
 
     }
 

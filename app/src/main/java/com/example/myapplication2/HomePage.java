@@ -20,7 +20,7 @@ public class HomePage extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), Listings.class));
+                startActivity(new Intent(getApplicationContext(), ListingsPage.class));
             }
         });
 
@@ -30,6 +30,14 @@ public class HomePage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), ProfilePage.class));
+            }
+        });
+
+        Button loanPageButton = findViewById(R.id.loanPageButton);
+        loanPageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), LoanPage.class));
             }
         });
         //Other buttons to be implemented later.

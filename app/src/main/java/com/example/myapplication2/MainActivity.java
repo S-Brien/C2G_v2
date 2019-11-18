@@ -12,73 +12,26 @@ import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.couchbase.lite.CouchbaseLiteException;
-import com.couchbase.lite.Database;
-import com.couchbase.lite.DatabaseConfiguration;
-import com.couchbase.lite.Document;
-import com.couchbase.lite.MutableDocument;
+import com.parse.LogInCallback;
+import com.parse.Parse;
+import com.parse.ParseAnalytics;
+import com.parse.ParseException;
+import com.parse.ParseUser;
+import com.parse.SignUpCallback;
 
 import java.util.Locale;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        loadLocale();
-        setContentView(R.layout.activity_main);
-
-        //change action bar
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle(getResources().getString(R.string.app_name));
-
-
-        Button changeLang = findViewById(R.id.changeMyLang);
-        changeLang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showChangeLanguageDialog();
-            }
-        });
-
-        Button profileTestButton = findViewById(R.id.profileTestButton);
-        profileTestButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-                startActivity(new Intent(getApplicationContext(), ProfilePage.class));
-            }
-        });
-
-
-
-        TextView textView = (TextView)findViewById(R.id.signTxt);
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-                startActivity(new Intent(getApplicationContext(), SignUp.class));
-            }
-        });
-
-        TextView textV = (TextView)findViewById(R.id.helpTxt);
-        textV.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-                startActivity(new Intent(getApplicationContext(), HelpPage.class));
-            }
-        });
-
-
-    }
+    Boolean signUpModeActive = true;
+    TextView changeSignUpModeTextView;
 
     private void showChangeLanguageDialog() {
         final String[] listItems = {"français", "हिंदी", "اردو", "Deutsche", "Português" , "中文", "English"};
@@ -152,8 +105,148 @@ public class MainActivity extends AppCompatActivity {
         setLocale(language);
     }
 
+    @Override
+    public void onClick(View view) {
+        if (view.getId() == R.id.changeSignUpModeTextView){
+
+            Button signUpButton = findViewById(R.id.signUpButton);
 
 
+
+            if(signUpModeActive){
+
+                signUpModeActive = false;
+                signUpButton.setText("Login");
+                changeSignUpModeTextView.setText("Or, SignUp");
+
+            }
+
+            else{
+
+                signUpModeActive = true;
+                signUpButton.setText("SignUp");
+                changeSignUpModeTextView.setText("Or, Login");
+
+            }
+        }
+    }
+
+    public void signUpClicked(View view){
+
+        EditText usernameEditText = findViewById(R.id.usernameEditText);
+        EditText passwordEditText = findViewById(R.id.passwordEditText);
+
+        if (usernameEditText.getText().toString().matches("") ||  passwordEditText.getText().toString().matches(""))
+        {
+
+            Toast.makeText(this, "A username and password are required", Toast.LENGTH_SHORT).show();
+
+
+        }
+        else{
+
+            if(signUpModeActive) {
+
+                ParseUser user = new ParseUser();
+                user.setUsername(usernameEditText.getText().toString());
+                user.setPassword(passwordEditText.getText().toString());
+
+
+                user.signUpInBackground(new SignUpCallback() {
+                    @Override
+                    public void done(ParseException e) {
+                        if (e == null) {
+                            Log.i("SignUp", "Successful");
+                            Toast.makeText(MainActivity.this, "Registration Successful!", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), HomePage.class));
+                        } else {
+
+                            Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+
+                    }
+                });
+
+            }
+            else{
+
+
+                ParseUser.logInInBackground(usernameEditText.getText().toString(), passwordEditText.getText().toString(), new LogInCallback() {
+                    @Override
+                    public void done(ParseUser user, ParseException e) {
+
+                        if(user !=null){
+
+                            Log.i("SignUp", "Login Successful");
+                            startActivity(new Intent(MainActivity.this, HomePage.class));
+                            finish();
+                        }
+
+
+
+                        else{
+                            Toast.makeText(MainActivity.this, e.getMessage(), Toast.LENGTH_SHORT).show();
+                        }
+
+                    }
+                });
+            }
+
+        }
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        loadLocale();
+        setContentView(R.layout.activity_main);
+
+        //--------------PARSE SIGN-UP STUFF
+
+        changeSignUpModeTextView = findViewById(R.id.changeSignUpModeTextView);
+        changeSignUpModeTextView.setOnClickListener(this);
+        ParseAnalytics.trackAppOpenedInBackground(getIntent());
+
+        //---------------------------------
+
+
+
+        //change action bar
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle(getResources().getString(R.string.app_name));
+
+
+        //-----------BUTTONS
+
+        Button changeLang = findViewById(R.id.changeMyLang);
+        changeLang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showChangeLanguageDialog();
+            }
+        });
+
+        TextView textView = (TextView)findViewById(R.id.signTxt);
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(getApplicationContext(), SignUp.class));
+            }
+        });
+
+        TextView textV = (TextView)findViewById(R.id.helpTxt);
+        textV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(getApplicationContext(), HelpPage.class));
+            }
+        });
+
+        //---------------------------
+
+    }
 }
 
 

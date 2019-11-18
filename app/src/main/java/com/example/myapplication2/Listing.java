@@ -6,6 +6,7 @@ public class Listing {
     private String price;
     private int id;
     private byte[] image;
+    private boolean isFavourite;
 
     public Listing (){}
 
@@ -14,6 +15,7 @@ public class Listing {
         this.price = price;
         this.id = id;
         this.image = image;
+        this.isFavourite = false;
     }
 
     public byte[] getImage() {
@@ -46,5 +48,13 @@ public class Listing {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public boolean isFavourite() {
+        return isFavourite;
+    }
+
+    public void setFavourite(boolean favourite) {
+        isFavourite = favourite;
     }
 }

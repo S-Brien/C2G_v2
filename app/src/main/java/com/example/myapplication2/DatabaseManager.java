@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 import java.util.ArrayList;
 
 import static android.content.Context.MODE_PRIVATE;
+import static com.example.myapplication2.FullListingInfo.faveList;
 
 public class DatabaseManager extends SQLiteOpenHelper {
 
@@ -27,7 +28,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
     public static final String COL_3 = "Email";
     public static final String COL_4 = "Password";
 
-    //Listings information database.
+    //ListingsPage information database.
     public static final String LISTINGS_TABLE = "Listings_Info";
     public static final String listings_COL_1 = "Property ID#";
     public static final String listings_COL_2 = "Address";
@@ -99,6 +100,25 @@ public class DatabaseManager extends SQLiteOpenHelper {
             listingList.add(newListing);
         }
         return listingList;
+    }
+
+    public ArrayList<Listing> getFavesData() {
+
+        SQLiteDatabase db = this.getWritableDatabase();
+        Cursor res = db.rawQuery("select * from "+LISTINGS_TABLE,null);
+
+        while(res.moveToNext()) {
+            int id = res.getInt(0);   //0 is the number of id column in your database table
+            String address = res.getString(1);
+            String price = res.getString(2);
+            byte[] image = res.getBlob(3);
+
+            System.out.println("TESTING: " + id + " " + address + " " + price);
+
+            Listing newListing = new Listing(id, address, price, image);
+            faveList.add(newListing);
+        }
+        return faveList;
     }
 
     public ArrayList<Listing> getAllPropertyData() {

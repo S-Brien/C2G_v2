@@ -20,59 +20,21 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:background="#CDDC39"
-        android:hint="@string/username"
-        android:textAlignment="center"
-        android:id="@+id/lgn"
-        android:layout_centerHorizontal="true"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <EditText
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="350sp"
-        android:layout_centerHorizontal="true"
-        android:hint="@string/pWord"
-        android:textAlignment="center"
-        android:background="#CDDC39"
-        android:id="@+id/pWord"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-
-    <Button
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="400dp"
-        android:background="#CDDC39"
-        android:text="@string/loginBtnTxt"
-        android:layout_width="100sp"
-        android:layout_height="30sp"
-        android:id="@+id/logBtn"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-
     <TextView
+        android:id="@+id/signTxt"
         android:layout_width="220sp"
         android:layout_height="45sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="440dp"
+        android:layout_marginTop="496dp"
+        android:text="Clickable text for test purposes."
         android:textColor="#cddc39"
         android:textSize="14sp"
-        android:text="@string/signUpTxt"
-        android:id="@+id/signTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:layout_width="160sp"
@@ -86,46 +48,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
-
-    <Button
-        android:id="@+id/profileTestButton"
-        android:layout_width="127dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:background="#CDDC39"
-        android:text="@string/profile_test"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="230dp"/>
-
-    <Button
-        android:id="@+id/databaseButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="183dp"
-        android:text="@string/dbTest"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-    <TextView
-        android:id="@+id/usernameTest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="165dp"
-        android:layout_marginTop="42dp"
-        android:text="@string/userN_Test"
-        android:textColor="#FFFFFF"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
 
     <TextView
         android:id="@+id/helpTxt"
@@ -141,6 +63,67 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="16dp"
+        android:background="#CDDC39"
+        android:hint="@string/username"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companyName" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#CDDC39"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companyName"
+        app:layout_constraintVertical_bias="0.148" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="100sp"
+        android:layout_height="30sp"
+        android:layout_centerHorizontal="true"
+        android:background="#CDDC39"
+        android:onClick="signUpClicked"
+        android:text="signup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472"
+        tools:text="signup" />
+
+    <TextView
+        android:id="@+id/changeSignUpModeTextView"
+        android:layout_width="111dp"
+        android:layout_height="32dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="144dp"
+        android:layout_toEndOf="@+id/signUpButton"
+        android:text="or, Login"
+        android:textColor="#02121B"
+        android:textColorHint="#3949AB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/companyName" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
