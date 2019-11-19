@@ -3,13 +3,16 @@
 
     <!-- Main/Home Page Language -->
     <string name="username">Nome de usuário</string>
-    <string name="pWord">Senha:</string>
+    <string name="pWord">Senha</string>
     <string name="loginBtnTxt">Conecte-se</string>
     <string name="signUpTxt">Não tem uma conta? Inscrever-se</string>
     <string name="cLTxt">Mudar idioma</string>
     <string name="profile_test">Teste de perfil</string>
     <string name="dbTest">Teste de banco de dados</string>
     <string name="userN_Test">Teste de nome de usuário</string>
+    <string name="csgName">vem 2 vai ©</string>
+    <string name="orLog">ou, Conecte-se</string>
+    <string name="testPur">Texto clicável para fins de teste.</string>
 
     <!-- Profile View Page Language Changes-->
     <string name="upAvatar">Atualizar Avatar</string>
@@ -25,6 +28,8 @@
     <string name="dispEmail">Isso exibirá o email do banco de dados</string>
     <string name="HelloMy">Olá, meu nome é Aaron</string>
     <string name="upPassword">Atualizar senha:</string>
+    <string name="proUser">Nome de usuário aqui</string>
+    <string name="proEmail">O email vai aqui</string>
 
 
     <!-- Sign-Up Page Language Changes -->
@@ -33,5 +38,41 @@
     <string name="choosePass">Escolha a senha</string>
     <string name="sUp">Inscrever-se</string>
     <string name="helpSt">Socorro</string>
+    <string name="afMsg">Obrigado por entrar em contato, um membro de nossa equipe entrará em contato com você em breve para responder sua pergunta. Obrigado por usar o vem 2 vai!</string>
+    <string name="g2Profile">Ir para a página Perfil</string>
+    <string name="exitApp">Sair da aplicação</string>
+
+
+    <!-- Help Page -->
+    <string name="hpName">Nome</string>
+    <string name="conMail">confirmar e-mail</string>
+    <string name="helpMsg">Envie uma mensagem ou consulta</string>
+    <string name="helpSend">Enviar</string>
+
+
+    <!-- Listings Page -->
+    <string name="lPrice">Preço:</string>
+    <string name="lOwner">Proprietário:</string>
+    <string name="lAddress">Endereço:</string>
+    <string name="lDescription">Descrição:</string>
+    <string name="lDeposit">Tipo de Depósito:</string>
+    <string name="addFav">Adicionar aos favoritos.</string>
+    <string name="delFav">Remova dos favoritos.</string>
+
+
+    <!--  Home Page  -->
+    <string name="lis">listagens</string>
+    <string name="maps">Mapas</string>
+    <string name="loans">Empréstimos</string>
+    <string name="homeUser">Nome de usuário Vai aqui.</string>
+
+
+    <!--  Listings -->
+    <string name="homeLis">Casa</string>
+    <string name="lisFavourites">Favoritos</string>
+
+    <!--  Loan Page -->
+    <string name="loanHome">Casa</string>
+
 
 </resources>

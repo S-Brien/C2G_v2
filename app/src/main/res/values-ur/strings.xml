@@ -4,13 +4,16 @@
 
     <!-- Main/Home Page Language -->
     <string name="username">صارف نام</string>
-    <string name="pWord">پاس ورڈ:</string>
+    <string name="pWord">پاس ورڈ</string>
     <string name="loginBtnTxt">لاگ ان کریں</string>
     <string name="signUpTxt">کھاتہ نہیں ہے کیا؟ سائن اپ</string>
     <string name="cLTxt">زبان تبدیل کریں</string>
     <string name="profile_test">پروفائل ٹیسٹ</string>
     <string name="dbTest">ڈیٹا بیس ٹیسٹ</string>
     <string name="userN_Test">صارف کا نام ٹیسٹ</string>
+    <string name="csgName">آو 2 گو ©</string>
+    <string name="orLog">یا ، لاگ ان کریں</string>
+    <string name="testPur">ٹیسٹ کے مقاصد کے لئے کلک قابل متن۔</string>
 
     <!-- Profile View Page Language Changes-->
     <string name="upAvatar">اوتار اپ ڈیٹ کریں</string>
@@ -26,6 +29,8 @@
     <string name="dispEmail">یہ ڈیٹا بیس سے ای میل ظاہر کرے گا</string>
     <string name="HelloMy">ہیلو میرا نام ہارون ہے</string>
     <string name="upPassword">پاس ورڈ کو اپ ڈیٹ کریں:</string>
+    <string name="proUser">صارف نام یہاں جاتا ہے</string>
+    <string name="proEmail">ای میل یہاں جاتا ہے</string>
 
 
     <!-- Sign-Up Page Language Changes -->
@@ -34,5 +39,41 @@
     <string name="choosePass">خفیہ کوڈ کا انتخاب کیجیئے</string>
     <string name="sUp">سائن اپ</string>
     <string name="helpSt">مدد</string>
+    <string name="afMsg">ہم سے رابطہ کرنے کے لئے آپ کا شکریہ ، ہماری ٹیم کا ایک ممبر جلد ہی آپ کے سوال کا جواب دینے کے لئے آپ کے ساتھ ہوگا۔ آو 2 جاؤ استعمال کرنے کے لئے آپ کا </string>
+    <string name="g2Profile">پروفائل کے صفحے پر جائیں</string>
+    <string name="exitApp">ایگزٹ ایپلی کیشن</string>
+
+
+    <!-- Help Page -->
+    <string name="hpName">نام</string>
+    <string name="conMail">ای میل کی توثیق کریں</string>
+    <string name="helpMsg">براہ کرم کوئی پیغام یا استفسار بھیجیں</string>
+    <string name="helpSend">بھیجیں</string>
+
+
+    <!-- Listings Page -->
+    <string name="lPrice">قیمت:</string>
+    <string name="lOwner">مالک:</string>
+    <string name="lAddress">پتہ:</string>
+    <string name="lDescription">تفصیل:</string>
+    <string name="lDeposit">ڈپازٹ کی قسم:</string>
+    <string name="addFav">پسندیدہ میں شامل کریں.</string>
+    <string name="delFav">پسندیدہ سے ہٹائیں۔</string>
+
+
+    <!--  Home Page  -->
+    <string name="lis">لسٹنگ</string>
+    <string name="maps">نقشہ جات</string>
+    <string name="loans">قرضے</string>
+    <string name="homeUser">صارف نام یہاں جاتا ہے۔</string>
+
+
+    <!--  Listings -->
+    <string name="homeLis">گھر</string>
+    <string name="lisFavourites">پسندیدہ</string>
+
+    <!--  Loan Page -->
+    <string name="loanHome">گھر</string>
+
 
 </resources>

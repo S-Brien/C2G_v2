@@ -26,7 +26,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="86dp"
         android:layout_marginTop="10dp"
-        android:text="Username Goes here." />
+        android:text="@string/homeUser" />
 
     <TextView
         android:id="@+id/textView2"
@@ -48,7 +48,7 @@
         android:layout_marginStart="-4dp"
         android:layout_marginTop="49dp"
         android:layout_toEndOf="@+id/listingsButton"
-        android:text="Maps" />
+        android:text="@string/maps" />
 
     <Button
         android:id="@+id/loanPageButton"
@@ -59,7 +59,7 @@
         android:layout_marginStart="79dp"
         android:layout_marginTop="49dp"
         android:layout_toEndOf="@+id/listingsButton"
-        android:text="Loans" />
+        android:text="@string/loans" />
 
     <Button
         android:id="@+id/listingsButton"
@@ -69,7 +69,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="82dp"
         android:layout_marginTop="49dp"
-        android:text="Listings" />
+        android:text="@string/lis" />
 
     <TextView
         android:id="@+id/textView3"

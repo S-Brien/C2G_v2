@@ -1,15 +1,18 @@
 <resources>
     <string name="app_name">Come2Go</string>
 
-    <!-- Main/Home Page Language -->
+    <!-- Main Page Language -->
     <string name="username">Username</string>
-    <string name="pWord">Password:</string>
+    <string name="pWord">Password</string>
     <string name="loginBtnTxt">Login</string>
     <string name="signUpTxt">Do Not Have an Account? Sign Up</string>
     <string name="cLTxt">Change Language</string>
     <string name="profile_test">Profile Test</string>
     <string name="dbTest">Database Test</string>
     <string name="userN_Test">Username Test</string>
+    <string name="csgName">Come2Go©</string>
+    <string name="orLog">or, Login</string>
+    <string name="testPur">Clickable text for test purposes.</string>
 
     <!-- Profile View Page Language Changes-->
     <string name="upAvatar">Update Avatar</string>
@@ -25,6 +28,8 @@
     <string name="dispEmail">This will display the email from the database</string>
     <string name="HelloMy">Hello my name is Aaron</string>
     <string name="upPassword">Update Password:</string>
+    <string name="proUser">Username goes here</string>
+    <string name="proEmail">Email goes here</string>
 
 
     <!-- Sign-Up Page Language Changes -->
@@ -33,6 +38,40 @@
     <string name="choosePass">Choose password</string>
     <string name="sUp">Sign Up</string>
     <string name="helpSt">Help</string>
+
+    <!-- AfterMail Page Language Changes -->
+    <string name="afMsg">Thank you for contacting us, a member of our team will be with you shortly to answer your query. Thank you for using Come2Go!</string>
+    <string name="g2Profile">Go to Profile page</string>
+    <string name="exitApp">Exit application</string>
+
+    <!-- Help Page -->
+    <string name="hpName">Name</string>
+    <string name="conMail">Confirm Email</string>
+    <string name="helpMsg">Please send a message or query</string>
+    <string name="helpSend">Send</string>
+
+    <!-- Listings Page -->
+    <string name="lPrice">Price:</string>
+    <string name="lOwner">Owner:</string>
+    <string name="lAddress">Address:</string>
+    <string name="lDescription">Description:</string>
+    <string name="lDeposit">Deposit Type:</string>
+    <string name="addFav">Add to favourites.</string>
+    <string name="delFav">Remove from favourites.</string>
+
+    <!--  Home Page  -->
+    <string name="lis">Listings</string>
+    <string name="maps">Maps</string>
+    <string name="loans">Loans</string>
+    <string name="homeUser">Username Goes here.</string>
+
+    <!--  Listings -->
+    <string name="homeLis">Home</string>
+    <string name="lisFavourites">Favourites</string>
+
+    <!--  Loan Page -->
+    <string name="loanHome">Home</string>
+
 
 
 </resources>

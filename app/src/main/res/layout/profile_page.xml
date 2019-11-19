@@ -97,7 +97,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="276dp"
-        android:text="Username goes here" />
+        android:text="@string/proUser" />
 
     <TextView
         android:id="@+id/emailGoesHere"
@@ -106,7 +106,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="208dp"
-        android:text="Email goes here" />
+        android:text="@string/proEmail" />
 
 
 </RelativeLayout>

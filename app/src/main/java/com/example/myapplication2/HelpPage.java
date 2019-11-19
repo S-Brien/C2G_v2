@@ -69,7 +69,7 @@ public class HelpPage extends AppCompatActivity {
                             Log.i("SendMailActivity", "To List: " + toEmailList);
                             String emailSubject = ((EditText) findViewById(R.id.hName1)).getText().toString();
                             String emailEmail = ((EditText) findViewById(R.id.email1)).getText().toString();
-                            String emailBody = "User's Email : " + ((EditText) findViewById(R.id.email1)).getText().toString() + "\n" +
+                            String emailBody = "User's Name : " + ((EditText) findViewById(R.id.hName1)).getText().toString() + "\n" + "User's Email : " + ((EditText) findViewById(R.id.email1)).getText().toString() + "\n" +
                                     "User's message: "+((EditText) findViewById(R.id.hMsg)).getText().toString();
                             new SendMailTask(HelpPage.this).execute(sendemail, password,toEmailList,emailSubject,emailBody,emailEmail);//send the email with all the relevant data included
                             startActivity(new Intent(getApplicationContext(),AfterMail.class)); //this will start the next activity that i have included after the mail is sent
