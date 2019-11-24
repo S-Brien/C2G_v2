@@ -4,13 +4,16 @@
 
     <!-- Main/Home Page Language -->
     <string name="username">Nutzername</string>
-    <string name="pWord">Passwort:</string>
+    <string name="pWord">Passwort</string>
     <string name="loginBtnTxt">Einloggen</string>
     <string name="signUpTxt">Haben Sie kein Konto? Anmelden</string>
     <string name="cLTxt">Sprache ändern</string>
     <string name="profile_test">Profiltest</string>
     <string name="dbTest">Datenbanktest</string>
     <string name="userN_Test">Benutzername Test</string>
+    <string name="csgName">komm 2 geh ©</string>
+    <string name="orLog">oder, Einloggen</string>
+    <string name="testPur">Anklickbarer Text zu Testzwecken.</string>
 
     <!-- Profile View Page Language Changes-->
     <string name="upAvatar">Avatar aktualisieren</string>
@@ -26,6 +29,8 @@
     <string name="dispEmail">Dadurch wird die E-Mail aus der Datenbank angezeigt</string>
     <string name="HelloMy">Hallo mein Name ist Aaron</string>
     <string name="upPassword">Passwort erneuern:</string>
+    <string name="proUser">Benutzername geht hier</string>
+    <string name="proEmail">E-Mail geht hier</string>
 
     <!-- Sign-Up Page Language Changes -->
     <string name="chooseUname">Wähle einen Benutzernamen</string>
@@ -33,6 +38,42 @@
     <string name="choosePass">Wählen sie ein Passwort</string>
     <string name="sUp">Anmelden</string>
     <string name="helpSt">Hilfe</string>
+
+    <!-- AfterMail Page  -->
+    <string name="afMsg">Vielen Dank für Ihre Kontaktaufnahme. Ein Mitglied unseres Teams wird in Kürze bei Ihnen sein, um Ihre Anfrage zu beantworten. Vielen Dank, dass Sie Komm 2 geh verwenden!</string>
+    <string name="g2Profile">Gehe zur Profilseite</string>
+    <string name="exitApp">Anwendung verlassen</string>
+
+    <!-- Help Page -->
+    <string name="hpName">Name</string>
+    <string name="conMail">Bestätigungs-E-Mail</string>
+    <string name="helpMsg">Bitte senden Sie eine Nachricht oder eine Anfrage</string>
+    <string name="helpSend">Senden</string>
+
+
+    <!-- Listings Page -->
+    <string name="lPrice">Preis:</string>
+    <string name="lOwner">Inhaber:</string>
+    <string name="lAddress">Adresse:</string>
+    <string name="lDescription">Beschreibung:</string>
+    <string name="lDeposit">Einzahlungsart:</string>
+    <string name="addFav">Zu Favoriten hinzufügen.</string>
+    <string name="delFav">Von den Favoriten entfernen.</string>
+
+
+    <!--  Home Page  -->
+    <string name="lis">Inserate</string>
+    <string name="maps">Karten</string>
+    <string name="loans">Kredite</string>
+    <string name="homeUser">Benutzername Geht hier.</string>
+
+
+    <!--  Listings -->
+    <string name="homeLis">Zuhause</string>
+    <string name="lisFavourites">Favoriten</string>
+
+    <!--  Loan Page -->
+    <string name="loanHome">Zuhause</string>
 
 
 </resources>

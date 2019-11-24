@@ -10,6 +10,9 @@
     <string name="profile_test">輪廓測試</string>
     <string name="dbTest">數據庫測試</string>
     <string name="userN_Test">用戶名測試</string>
+    <string name="csgName">來吧©</string>
+    <string name="orLog">或者，登录</string>
+    <string name="testPur">用于测试目的的可点击文本。</string>
 
     <!-- Profile View Page Language Changes-->
     <string name="upAvatar">更新頭像</string>
@@ -25,13 +28,52 @@
     <string name="dispEmail">這將顯示數據庫中的電子郵件</string>
     <string name="HelloMy">你好，我叫亞倫</string>
     <string name="upPassword">更新密碼:</string>
+    <string name="proUser">用户名在这里</string>
+    <string name="proEmail">电子邮件在这里</string>
 
 
     <!-- Sign-Up Page Language Changes -->
     <string name="chooseUname">選擇一個用戶名</string>
-    <string name="enterEmail">請輸入電郵地址</string>
+    <string name="enterEmail">請輸入電郵地</string>
     <string name="choosePass">選擇密碼</string>
     <string name="sUp">註冊</string>
     <string name="helpSt">救命</string>
+
+    <!--  AfterMail Page -->
+    <string name="afMsg">感谢您与我们联系，我们团队的成员将很快与您一起回答您的查询。 感谢您使用 來吧</string>
+    <string name="g2Profile">转到个人资料页面</string>
+    <string name="exitApp">退出申请</string>
+
+
+    <!-- Help Page -->
+    <string name="hpName">名称</string>
+    <string name="conMail">确认邮件</string>
+    <string name="helpMsg">请发送消息或查询</string>
+    <string name="helpSend">发送</string>
+
+
+    <!-- Listings Page -->
+    <string name="lPrice">价钱：</string>
+    <string name="lOwner">所有者：</string>
+    <string name="lAddress">地址：</string>
+    <string name="lDescription">描述：</string>
+    <string name="lDeposit">存款类型：</string>
+    <string name="addFav">加入“最喜欢的。</string>
+    <string name="delFav">从收藏夹中删除。</string>
+
+
+    <!--  Home Page  -->
+    <string name="lis">列表</string>
+    <string name="maps">地图</string>
+    <string name="loans">贷款额</string>
+    <string name="homeUser">用户名转到此处。</string>
+
+
+    <!--  Listings -->
+    <string name="homeLis">家</string>
+    <string name="lisFavourites">收藏夹</string>
+
+    <!--  Loan Page -->
+    <string name="loanHome">家</string>
 
 </resources>

@@ -4,13 +4,16 @@
 
     <!-- Main/Home Page Language -->
     <string name="username">Nom d\'utilisateur</string>
-    <string name="pWord">Mot de passe:</string>
+    <string name="pWord">Mot de passe</string>
     <string name="loginBtnTxt">S\'identifier</string>
     <string name="signUpTxt">Vous n\'avez pas de compte? S\'inscrire</string>
     <string name="cLTxt">Changer de langue</string>
     <string name="profile_test">Test de profil</string>
     <string name="dbTest">Test de base de données</string>
     <string name="userN_Test">Test de nom d\'utilisateur</string>
+    <string name="csgName">Viens 2 va</string>
+    <string name="orLog">ou, Connexion</string>
+    <string name="testPur">Texte cliquable à des fins de test.</string>
 
     <!-- Profile View Page Language Changes-->
     <string name="upAvatar">Mettre à jour l\'avatar</string>
@@ -26,6 +29,8 @@
     <string name="dispEmail">Cela affichera l\'email de la base de données</string>
     <string name="HelloMy">Bonjour je m\'appelle Aaron</string>
     <string name="upPassword">Mettre à jour le mot de passe:</string>
+    <string name="proUser">Nom d\'utilisateur va ici</string>
+    <string name="proEmail">L\'email va ici</string>
 
 
     <!-- Sign-Up Page Language Changes -->
@@ -34,4 +39,39 @@
     <string name="choosePass">Choisissez un mot de passe</string>
     <string name="sUp">S\'inscrire</string>
     <string name="helpSt">Aidez-moi</string>
+    <string name="afMsg">TMerci de nous avoir contacté, un membre de notre équipe sera avec vous dans les plus brefs délais pour répondre à votre requête. Merci d\'utiliser Viens 2 va!</string>
+    <string name="g2Profile">Aller à la page de profil</string>
+    <string name="exitApp">Demande de sortie</string>
+
+
+    <!-- Help Page -->
+    <string name="hpName">Nom</string>
+    <string name="conMail">Confirmez votre e-mail</string>
+    <string name="helpMsg">S\'il vous plaît envoyer un message ou une requête</string>
+    <string name="helpSend">Envoyer</string>
+
+
+    <!-- Listings Page -->
+    <string name="lPrice">Prix:</string>
+    <string name="lOwner">Propriétaire:</string>
+    <string name="lAddress">Adresse:</string>
+    <string name="lDescription">La description:</string>
+    <string name="lDeposit">Type de dépôt:</string>
+    <string name="addFav">Ajouter aux Favoris.</string>
+    <string name="delFav">Supprimer des favoris.</string>
+
+
+    <!--  Home Page  -->
+    <string name="lis">Annonces</string>
+    <string name="maps">Plans</string>
+    <string name="loans">Les prêts</string>
+    <string name="homeUser">Nom d\'utilisateur Va ici.</string>
+
+
+    <!--  Listings -->
+    <string name="homeLis">Accueil</string>
+    <string name="lisFavourites">Favoris</string>
+
+    <!--  Loan Page -->
+    <string name="loanHome">Accueil</string>
 </resources>

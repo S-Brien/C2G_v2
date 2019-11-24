@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">2 आना</string>
+    <string name="app_name">आओ 2 जाओ</string>
 
     <!-- Main/Home Page Language -->
     <string name="username">उपयोगकर्ता नाम</string>
-    <string name="pWord">पारण शब्द:</string>
+    <string name="pWord">पारण शब्द</string>
     <string name="loginBtnTxt">लॉग इन करें</string>
     <string name="signUpTxt">कोई खाता नहीं है? साइन अप करें</string>
     <string name="cLTxt">भाषा बदलो</string>
     <string name="profile_test">प्रोफाइल टेस्ट</string>
     <string name="dbTest">डेटाबेस टेस्ट</string>
     <string name="userN_Test">उपयोगकर्ता नाम परीक्षण</string>
+    <string name="csgName">आओ 2 जाओ ©</string>
+    <string name="orLog">या, लॉगिन करें</string>
+    <string name="testPur">परीक्षण के प्रयोजनों के लिए क्लिक करने योग्य पाठ।</string>
 
     <!-- Profile View Page Language Changes-->
     <string name="upAvatar">अवतार अद्यतन करें</string>
@@ -26,6 +29,8 @@
     <string name="dispEmail">यह डेटाबेस से ईमेल प्रदर्शित करेगा</string>
     <string name="HelloMy">हेलो मेरा नाम आरोन है</string>
     <string name="upPassword">पासवर्ड अपडेट करे:</string>
+    <string name="proUser">उपयोगकर्ता नाम यहाँ जाता है</string>
+    <string name="proEmail">ईमेल यहाँ जाता है</string>
 
 
     <!-- Sign-Up Page Language Changes -->
@@ -34,4 +39,41 @@
     <string name="choosePass">पासवर्ड चुनें</string>
     <string name="sUp">साइन अप करें</string>
     <string name="helpSt">मदद</string>
+
+    <!--  AfterMail Page -->
+    <string name="afMsg">हमसे संपर्क करने के लिए धन्यवाद, हमारी टीम का एक सदस्य आपकी क्वेरी का जवाब देने के लिए शीघ्र ही आपके साथ होगा। आने के लिए धन्यवाद।</string>
+    <string name="g2Profile">प्रोफाइल पेज पर जाएं</string>
+    <string name="exitApp">छोड़ने के लिए प्रार्थनापत्र</string>
+
+
+    <!-- Help Page -->
+    <string name="hpName">नाम</string>
+    <string name="conMail">ईमेल की पुष्टि करें</string>
+    <string name="helpMsg">कृपया एक संदेश या प्रश्न भेजें</string>
+    <string name="helpSend">संदेश</string>
+
+
+    <!-- Listings Page -->
+    <string name="lPrice">मूल्य:</string>
+    <string name="lOwner">मालिक:</string>
+    <string name="lAddress">पता:</string>
+    <string name="lDescription">विवरण:</string>
+    <string name="lDeposit">जमा प्रकार:</string>
+    <string name="addFav">पसंदीदा में जोड़ें।</string>
+    <string name="delFav">पसंदीदा से निकालें।</string>
+
+
+    <!--  Home Page  -->
+    <string name="lis">लिस्टिंग</string>
+    <string name="maps">मैप्स</string>
+    <string name="loans">ऋण</string>
+    <string name="homeUser">उपयोगकर्ता नाम यहाँ जाता है।</string>
+
+
+    <!--  Listings -->
+    <string name="homeLis">होम</string>
+    <string name="lisFavourites">पसंदीदा</string>
+
+    <!--  Loan Page -->
+    <string name="loanHome">होम</string>
 </resources>
