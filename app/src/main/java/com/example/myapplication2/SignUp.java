@@ -22,7 +22,7 @@ public class SignUp extends AppCompatActivity {
     EditText editUsername, editEmail, editPassword;
     Button addDataButton;
     ProfilePage profile;
-    static int userID;
+    public static int USER_ID;
 
 
     @Override
@@ -32,9 +32,6 @@ public class SignUp extends AppCompatActivity {
         myDB = new DatabaseManager(this);
 
 
-        userArray = new ArrayList<User>();
-        profile = new ProfilePage();
-
         editUsername = (EditText)findViewById(R.id.usernameField);
         editEmail = (EditText)findViewById(R.id.emailField);
         editPassword = (EditText)findViewById(R.id.passwordField);
@@ -43,7 +40,6 @@ public class SignUp extends AppCompatActivity {
         addData();
 
         addDataButton = (Button)findViewById(R.id.signupButton);
-        profile = new ProfilePage();
 
         TextView textV2 = (TextView)findViewById(R.id.helpTxt1);
 
@@ -64,20 +60,20 @@ public class SignUp extends AppCompatActivity {
             public void onClick(View v) {
 
                 //Boolean possibly causing non new user
-                boolean isInserted = myDB.insertData(editUsername.getText().toString(),
+                myDB.insertData(editUsername.getText().toString(),
                                                      editEmail.getText().toString(),
                                                      editPassword.getText().toString() );
 
 
 
-                if (isInserted) {
+                /*if (isInserted) {
                     Toast.makeText(SignUp.this, "Account created!", Toast.LENGTH_LONG).show();
-                    createUserAndAddToArray();
+                    //generateUserID();
                     startActivity(new Intent(getApplicationContext(), HomePage.class));
                 }
                 else {
                     Toast.makeText(SignUp.this, "Failed to create account.", Toast.LENGTH_LONG).show();
-                }
+                }*/
 
             }
         });
@@ -95,22 +91,16 @@ public class SignUp extends AppCompatActivity {
 
 
 
-    public void createUserAndAddToArray(){
+    /*public void generateUserID(){
 
         //Res is ID of the new customer
+
         Cursor res = myDB.getInfo();
-        userID = res.getInt(0);
-        System.out.println("UserID = " + userID);
+        USER_ID = res.getInt(0) - 1;
+        System.out.println("UserID = " + USER_ID);
 
-        User user = new User(userID,
-                editUsername.getText().toString(),
-                editEmail.getText().toString(),
-                editPassword.getText().toString() );
-
-
-        userArray.add(user);
         //Compare method to ListingsPage method
+        //Try creating and returning the user ArrayList in the database manager class like the listings.
+        //*/
 
     }
-
-}

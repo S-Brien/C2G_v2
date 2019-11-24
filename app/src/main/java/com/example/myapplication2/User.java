@@ -11,11 +11,11 @@ public class User {
     public User() {
     }
 
-    public User(int id, String username, String email, String password) {
+    public User(int id, String username, String email, String password, Double balance) {
         this.username = username;
         this.password = password;
         this.email = email;
-        this.balance = 0.0;
+        this.balance = balance;
         this.id = id;
     }
 

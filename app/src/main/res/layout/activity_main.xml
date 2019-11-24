@@ -91,7 +91,7 @@
         app:layout_constraintHorizontal_bias="0.53"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/companyName"
-        app:layout_constraintVertical_bias="0.148" />
+        app:layout_constraintVertical_bias="0.196" />
 
     <Button
         android:id="@+id/signUpButton"
@@ -106,7 +106,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.472"
+        app:layout_constraintVertical_bias="0.499"
         tools:text="signup" />
 
     <TextView
@@ -115,7 +115,7 @@
         android:layout_height="32dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="144dp"
+        android:layout_marginTop="160dp"
         android:layout_toEndOf="@+id/signUpButton"
         android:text="or, Login"
         android:textColor="#02121B"
@@ -124,6 +124,19 @@
         app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/companyName" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="8dp"
+        android:background="#CDDC39"
+        android:hint="E-mail"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameEditText" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

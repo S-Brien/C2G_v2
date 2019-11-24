@@ -58,11 +58,11 @@ public class CustomAdapter extends BaseAdapter {
             holder = (ViewHolder)convertView.getTag();
         }
 
-        Listing stu = listingList.get(position);
-        holder.id.setText(String.valueOf(stu.getId()));
-        holder.address.setText(stu.getAddress());
-        holder.price.setText(stu.getPrice());
-        holder.image.setImageBitmap(BitmapFactory.decodeByteArray(stu.getImage(), 0, stu.getImage().length));
+        Listing listing = listingList.get(position);
+        holder.id.setText(String.valueOf(listing.getId()));
+        holder.address.setText(listing.getAddress());
+        holder.price.setText(listing.getPrice());
+        holder.image.setImageBitmap(BitmapFactory.decodeByteArray(listing.getImage(), 0, listing.getImage().length));
 
 
         return convertView;

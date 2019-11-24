@@ -21,8 +21,9 @@ public class FullListingInfo extends AppCompatActivity {
     ImageView image;
     TextView price, address;
     static ArrayList<Listing> faveList = new ArrayList<>();
+    static ArrayList<Listing> applicationList = new ArrayList<>();
     ArrayList<Listing> listingList;
-    Listing faveListing;
+    Listing faveListing, applicationListing;
     ToggleButton toggle;
 
 
@@ -35,6 +36,14 @@ public class FullListingInfo extends AppCompatActivity {
         listingList = dbm.getAllPropertyData();
 
         setInfo(listingList.get(LISTING_ID));
+
+        Button applyButton = findViewById(R.id.applyButton);
+        applyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                addToApplications();
+            }
+        });
 
         toggle = (ToggleButton) findViewById(R.id.faveToggle);
         toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -60,6 +69,14 @@ public class FullListingInfo extends AppCompatActivity {
         price.setText(listing.getPrice());
         address.setText(listing.getAddress());
 
+
+    }
+
+    private void addToApplications(){
+
+        applicationListing = listingList.get(LISTING_ID);
+        applicationList.add(applicationListing);
+        Toast.makeText(FullListingInfo.this, "Application made!", Toast.LENGTH_LONG).show();
 
     }
 

@@ -30,8 +30,15 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
+    //HARDCODED TEXT CANNOT BE TRANSLATED AUTOMATICALLY, PHASE OUT ALL HARDCODED TEXT BY
+    //PROJECT END BY REPLACING WITH @STRING METHOD.
+    //FIX FAVOURITE BUTTON
+    //Add the functionality to edit email and add biography to customer table.
+
     Boolean signUpModeActive = true;
     TextView changeSignUpModeTextView;
+    DatabaseManager myDB;
+    public static String CUSTOMER_USERNAME;
 
     private void showChangeLanguageDialog() {
         final String[] listItems = {"français", "हिंदी", "اردو", "Deutsche", "Português" , "中文", "English"};
@@ -135,6 +142,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         EditText usernameEditText = findViewById(R.id.usernameEditText);
         EditText passwordEditText = findViewById(R.id.passwordEditText);
+        EditText emailEditText = findViewById(R.id.emailEditText);
 
         if (usernameEditText.getText().toString().matches("") ||  passwordEditText.getText().toString().matches(""))
         {
@@ -156,6 +164,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     @Override
                     public void done(ParseException e) {
                         if (e == null) {
+                            CUSTOMER_USERNAME = usernameEditText.getText().toString();
+                            myDB.insertData(usernameEditText.getText().toString(), emailEditText.getText().toString(), passwordEditText.getText().toString());
                             Log.i("SignUp", "Successful");
                             Toast.makeText(MainActivity.this, "Registration Successful!", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), HomePage.class));
@@ -176,7 +186,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     public void done(ParseUser user, ParseException e) {
 
                         if(user !=null){
-
+                            CUSTOMER_USERNAME = usernameEditText.getText().toString();
                             Log.i("SignUp", "Login Successful");
                             startActivity(new Intent(MainActivity.this, HomePage.class));
                             finish();
@@ -200,6 +210,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         loadLocale();
         setContentView(R.layout.activity_main);
+
+        myDB = new DatabaseManager(this);
 
         //--------------PARSE SIGN-UP STUFF
 
