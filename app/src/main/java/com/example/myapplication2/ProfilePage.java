@@ -1,5 +1,6 @@
 package com.example.myapplication2;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
@@ -103,6 +104,7 @@ public class ProfilePage extends AppCompatActivity {
 
     }
 
+    @SuppressLint("MissingSuperCall")
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
 
         super.onActivityResult(requestCode, resultCode, data);

@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     //HARDCODED TEXT CANNOT BE TRANSLATED AUTOMATICALLY, PHASE OUT ALL HARDCODED TEXT BY
     //PROJECT END BY REPLACING WITH @STRING METHOD.
     //FIX FAVOURITE BUTTON
-    //Add the functionality to edit email and add biography to customer table.
+    //Add the functionality to edit email and add biography to customer table and make the profile picture global.
+    //Make sure all buttons work
 
     Boolean signUpModeActive = true;
     TextView changeSignUpModeTextView;
