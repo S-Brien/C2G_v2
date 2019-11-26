@@ -16,15 +16,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FullListingInfo"></activity>
-        <activity android:name=".LoanPage"></activity>
-        <activity android:name=".HelpPage"></activity>
-        <activity android:name=".HomePage"></activity>
-        <activity android:name=".ListingsPage"></activity>
-        <activity android:name=".ProfilePage"></activity>
-        <activity android:name=".AfterMail"></activity>
-        <activity android:name=".SignUp"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".FullListingInfo" />
+        <activity android:name=".LoanPage" />
+        <activity android:name=".HelpPage" />
+        <activity android:name=".HomePage" />
+        <activity android:name=".ListingsPage" />
+        <activity android:name=".ProfilePage" />
+        <activity android:name=".AfterMail" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public static String CUSTOMER_USERNAME;
 
     private void showChangeLanguageDialog() {
-        final String[] listItems = {"français", "हिंदी", "اردو", "Deutsche", "Português" , "中文", "English"};
+        final String[] listItems = {"français", "हिंदी", "اردو", "Deutsche", "Português" , "中文", "Español", "English"};
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
         mBuilder.setTitle("Choose Language ...");
         mBuilder.setSingleChoiceItems(listItems, -1, new DialogInterface.OnClickListener() {
@@ -79,6 +79,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     recreate();
                 }
                 else if(i == 6){
+                    setLocale("es");
+                    recreate();
+                }
+                else if(i == 7){
                     setLocale("en");
                     recreate();
                 }

@@ -31,6 +31,8 @@
     <string name="upPassword">Mettre à jour le mot de passe:</string>
     <string name="proUser">Nom d\'utilisateur va ici</string>
     <string name="proEmail">L\'email va ici</string>
+    <string name="proBalance">Équilibre:</string>
+    <string name="proApplications">Applications:</string>
 
 
     <!-- Sign-Up Page Language Changes -->
@@ -66,12 +68,23 @@
     <string name="maps">Plans</string>
     <string name="loans">Les prêts</string>
     <string name="homeUser">Nom d\'utilisateur Va ici.</string>
+    <string name="hpInfo">Informations sur la page d\'accueil ici.</string>
+    <string name="hpOthInfo">D\'autres informations relatives vont ici.</string>
 
 
     <!--  Listings -->
     <string name="homeLis">Accueil</string>
     <string name="lisFavourites">Favoris</string>
+    <string name="apToRent">Appliquer à louer.</string>
 
     <!--  Loan Page -->
     <string name="loanHome">Accueil</string>
+    <string name="_200Hint">€200</string>
+    <string name="reqLoanAm">Demander le montant du prêt.</string>
+    <string name="requestBtn">Demande</string>
+
+
+
+
+
 </resources>

@@ -104,8 +104,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="56dp"
         android:text="ToggleButton"
-        android:textOff="@string/addFav"
-        android:textOn="@string/delFav" />
+        android:textOff="@string/delFav"
+        android:textOn="@string/addFav" />
 
     <Button
         android:id="@+id/applyButton"
@@ -114,6 +114,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="112dp"
-        android:text="Apply to rent." />
+        android:text="@string/apToRent" />
 
 </RelativeLayout>

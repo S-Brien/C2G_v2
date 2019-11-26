@@ -19,7 +19,7 @@
     <string name="editBio">Edit Biography</string>
     <string name="bio">Biography</string>
     <string name="UpBio">Update Biography</string>
-    <string name="email">Email:</string>
+    <string name="email">Email</string>
     <string name="newPass">New Password</string>
     <string name="upPass">Update Password</string>
     <string name="uName">Username:</string>
@@ -30,6 +30,8 @@
     <string name="upPassword">Update Password:</string>
     <string name="proUser">Username goes here</string>
     <string name="proEmail">Email goes here</string>
+    <string name="proBalance">Balance:</string>
+    <string name="proApplications">Applications:</string>
 
 
     <!-- Sign-Up Page Language Changes -->
@@ -64,14 +66,19 @@
     <string name="maps">Maps</string>
     <string name="loans">Loans</string>
     <string name="homeUser">Username Goes here.</string>
+    <string name="hpInfo">Home Page Information Here.</string>
+    <string name="hpOthInfo">Other relative information goes here.</string>
 
     <!--  Listings -->
     <string name="homeLis">Home</string>
     <string name="lisFavourites">Favourites</string>
+    <string name="apToRent">Apply to rent.</string>
 
     <!--  Loan Page -->
     <string name="loanHome">Home</string>
-
+    <string name="_200Hint">€200</string>
+    <string name="reqLoanAm">Request loan amount.</string>
+    <string name="requestBtn">Request</string>
 
 
 </resources>

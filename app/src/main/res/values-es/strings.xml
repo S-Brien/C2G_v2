@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">Ven2ir</string>
+
+    <!-- Main Page Language -->
+    <string name="username">Nombre de usuario</string>
+    <string name="pWord">Contraseña</string>
+    <string name="loginBtnTxt">Iniciar sesión</string>
+    <string name="signUpTxt">¿No tiene una cuenta? Regístrese</string>
+    <string name="cLTxt">Cambiar idioma</string>
+    <string name="profile_test">Prueba de perfil</string>
+    <string name="dbTest">Prueba de base de datos</string>
+    <string name="userN_Test">Prueba de nombre de usuario</string>
+    <string name="csgName">Ven2ir©</string>
+    <string name="orLog">o, Iniciar sesión</string>
+    <string name="testPur">Texto en el que se puede hacer clic para fines de prueba.</string>
+
+    <!-- Profile View Page Language Changes-->
+    <string name="upAvatar">Actualizar avatar</string>
+    <string name="editBio">Editar biografía</string>
+    <string name="bio">Biografia</string>
+    <string name="UpBio">Actualización de biografía</string>
+    <string name="email">Correo electrónico</string>
+    <string name="newPass">Nueva contraseña</string>
+    <string name="upPass">Actualizar contraseña</string>
+    <string name="uName">Nombre de usuario:</string>
+    <string name="editUsername">Editar nombre de usuario</string>
+    <string name="upMail">Actualizar correo electrónico</string>
+    <string name="dispEmail">Esto mostrará el correo electrónico de la base de datos.</string>
+    <string name="HelloMy">Hola mi nombre es Aaron</string>
+    <string name="upPassword">Actualizar contraseña:</string>
+    <string name="proUser">El nombre de usuario va aquí</string>
+    <string name="proEmail">El correo electrónico va aquí</string>
+    <string name="proBalance">Equilibrio:</string>
+    <string name="proApplications">Aplicaciones:</string>
+
+
+    <!-- Sign-Up Page Language Changes -->
+    <string name="chooseUname">Elige un nombre de usuario</string>
+    <string name="enterEmail">Ingrese dirección de correo electrónico</string>
+    <string name="choosePass">Elige contraseña</string>
+    <string name="sUp">Registrarse</string>
+    <string name="helpSt">Ayuda</string>
+
+    <!-- AfterMail Page Language Changes -->
+    <string name="afMsg">Gracias por contactarnos, un miembro de nuestro equipo estará con usted en breve para responder su consulta. ¡Gracias por usar Ven2ir!</string>
+    <string name="g2Profile">Ir a la página de perfil</string>
+    <string name="exitApp">Exit Application</string>
+
+    <!-- Help Page -->
+    <string name="hpName">Nombre</string>
+    <string name="conMail">Confirmar correo electrónico</string>
+    <string name="helpMsg">Por favor envíe un mensaje o consulta</string>
+    <string name="helpSend">Enviar</string>
+
+    <!-- Listings Page -->
+    <string name="lPrice">Precio:</string>
+    <string name="lOwner">Propietario:</string>
+    <string name="lAddress">Dirección:</string>
+    <string name="lDescription">Descripción:</string>
+    <string name="lDeposit">Tipo de depósito:</string>
+    <string name="addFav">Añadir a favoritos.</string>
+    <string name="delFav">Eliminar de favoritos.</string>
+
+    <!--  Home Page  -->
+    <string name="lis">Listados</string>
+    <string name="maps">Mapas</string>
+    <string name="loans">Préstamos</string>
+    <string name="homeUser">El nombre de usuario va aquí.</string>
+    <string name="hpInfo">Información de la página de inicio aquí.</string>
+    <string name="hpOthInfo">Otra información relativa va aquí.</string>
+
+    <!--  Listings -->
+    <string name="homeLis">Inicio</string>
+    <string name="lisFavourites">Favoritos</string>
+    <string name="apToRent">Aplicar para alquilar.</string>
+
+    <!--  Loan Page -->
+    <string name="loanHome">Inicio</string>
+    <string name="_200Hint">€200</string>
+    <string name="reqLoanAm">Solicitar monto del préstamo.</string>
+    <string name="requestBtn">Solicitud</string>
+
+
+
+
+
+</resources>

@@ -37,7 +37,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="86dp"
         android:layout_marginTop="28dp"
-        android:text="Other relative information goes here." />
+        android:text="@string/hpOthInfo" />
 
     <Button
         android:id="@+id/mapPageButton"
@@ -80,5 +80,5 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="113dp"
         android:layout_marginTop="235dp"
-        android:text="Home Page Information Here." />
+        android:text="@string/hpInfo" />
 </RelativeLayout>

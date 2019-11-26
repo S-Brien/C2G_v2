@@ -31,6 +31,8 @@
     <string name="upPassword">पासवर्ड अपडेट करे:</string>
     <string name="proUser">उपयोगकर्ता नाम यहाँ जाता है</string>
     <string name="proEmail">ईमेल यहाँ जाता है</string>
+    <string name="proBalance">शेष राशि:</string>
+    <string name="proApplications">अनुप्रयोगों:</string>
 
 
     <!-- Sign-Up Page Language Changes -->
@@ -68,12 +70,24 @@
     <string name="maps">मैप्स</string>
     <string name="loans">ऋण</string>
     <string name="homeUser">उपयोगकर्ता नाम यहाँ जाता है।</string>
+    <string name="hpInfo">होमपेज की जानकारी यहाँ।</string>
+    <string name="hpOthInfo">अन्य सापेक्ष जानकारी यहां मिलती है।</string>
 
 
     <!--  Listings -->
     <string name="homeLis">होम</string>
     <string name="lisFavourites">पसंदीदा</string>
+    <string name="apToRent">किराया लागू करें।</string>
 
     <!--  Loan Page -->
     <string name="loanHome">होम</string>
+    <string name="_200Hint">€200</string>
+    <string name="reqLoanAm">ऋण राशि का अनुरोध करें।</string>
+    <string name="requestBtn">निवेदन</string>
+
+
+
+
+
+
 </resources>

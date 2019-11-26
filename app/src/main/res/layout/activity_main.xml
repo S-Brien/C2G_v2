@@ -133,7 +133,7 @@
         android:layout_marginStart="112dp"
         android:layout_marginTop="8dp"
         android:background="#CDDC39"
-        android:hint="E-mail"
+        android:hint="@string/email"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/usernameEditText" />

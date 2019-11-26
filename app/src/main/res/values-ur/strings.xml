@@ -31,6 +31,8 @@
     <string name="upPassword">پاس ورڈ کو اپ ڈیٹ کریں:</string>
     <string name="proUser">صارف نام یہاں جاتا ہے</string>
     <string name="proEmail">ای میل یہاں جاتا ہے</string>
+    <string name="proBalance">بقیہ:</string>
+    <string name="proApplications">درخواستیں:</string>
 
 
     <!-- Sign-Up Page Language Changes -->
@@ -66,14 +68,26 @@
     <string name="maps">نقشہ جات</string>
     <string name="loans">قرضے</string>
     <string name="homeUser">صارف نام یہاں جاتا ہے۔</string>
+    <string name="hpInfo">مرکزی صفحہ کی معلومات یہاں۔</string>
+    <string name="hpOthInfo">دیگر متعلقہ معلومات یہاں جاتی ہیں۔</string>
 
 
     <!--  Listings -->
     <string name="homeLis">گھر</string>
     <string name="lisFavourites">پسندیدہ</string>
+    <string name="apToRent">کرایہ کے لئے درخواست دیں۔</string>
 
     <!--  Loan Page -->
     <string name="loanHome">گھر</string>
+    <string name="_200Hint">€200</string>
+    <string name="reqLoanAm">قرض کی رقم کی درخواست کریں۔</string>
+    <string name="requestBtn">درخواست کریں</string>
+
+
+
+
+
+
 
 
 </resources>
