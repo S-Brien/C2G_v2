@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">تعال 2 اذهب </string>
+
+    <!-- Main Page Language -->
+    <string name="username">اسم المستخدم</string>
+    <string name="pWord">كلمه السر</string>
+    <string name="loginBtnTxt">تسجيل الدخول</string>
+    <string name="signUpTxt">لا تملك حساب؟ سجل</string>
+    <string name="cLTxt">غير اللغة</string>
+    <string name="profile_test">اختبار الشخصية</string>
+    <string name="dbTest">اختبار قاعدة البيانات</string>
+    <string name="userN_Test">اسم المستخدم اختبار</string>
+    <string name="csgName">تعال 2 اذهب ©</string>
+    <string name="orLog">أو ، تسجيل الدخول</string>
+    <string name="testPur">نص قابل للنقر لأغراض الاختبار.</string>
+
+    <!-- Profile View Page Language Changes-->
+    <string name="upAvatar">تحديث الصورة الرمزية</string>
+    <string name="editBio">تحرير السيرة الذاتية</string>
+    <string name="bio">سيرة شخصية</string>
+    <string name="UpBio">تحديث السيرة الذاتية</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="newPass">كلمة مرور جديدة</string>
+    <string name="upPass">تطوير كلمة السر</string>
+    <string name="uName">اسم المستخدم:</string>
+    <string name="editUsername">تحرير اسم المستخدم</string>
+    <string name="upMail">تحديث البريد الإلكتروني</string>
+    <string name="dispEmail">سيعرض هذا البريد الإلكتروني من قاعدة البيانات</string>
+    <string name="HelloMy">مرحبا اسمي آرون</string>
+    <string name="upPassword">تطوير كلمة السر:</string>
+    <string name="proUser">اسم المستخدم يذهب هنا</string>
+    <string name="proEmail">البريد الإلكتروني يذهب هنا</string>
+    <string name="proBalance">توازن:</string>
+    <string name="proApplications">التطبيقات:</string>
+
+
+    <!-- Sign-Up Page Language Changes -->
+    <string name="chooseUname">اختر اسم للمستخدم</string>
+    <string name="enterEmail">أدخل عنوان البريد الالكتروني</string>
+    <string name="choosePass">إختر كلمة السر</string>
+    <string name="sUp">سجل</string>
+    <string name="helpSt">مساعدة</string>
+
+    <!-- AfterMail Page Language Changes -->
+    <string name="afMsg">شكرًا على اتصالك بنا ، سيكون أحد أعضاء فريقنا معك قريبًا للرد على استفسارك. شكرا لك على استخدام تأتي 2 العودة!</string>
+    <string name="g2Profile">الذهاب إلى صفحة الملف الشخصي</string>
+    <string name="exitApp">الخروج من التطبيق</string>
+
+    <!-- Help Page -->
+    <string name="hpName">اسم</string>
+    <string name="conMail">تأكيد عنوان البريد الإلكتروني</string>
+    <string name="helpMsg">يرجى إرسال رسالة أو استفسار</string>
+    <string name="helpSend">إرسال</string>
+
+    <!-- Listings Page -->
+    <string name="lPrice">السعر:</string>
+    <string name="lOwner">صاحب:</string>
+    <string name="lAddress">عنوان:</string>
+    <string name="lDescription">وصف:</string>
+    <string name="lDeposit">نوع الوديعة:</string>
+    <string name="addFav">أضف إلى المفضلة.</string>
+    <string name="delFav">إزالة من المفضلة.</string>
+
+    <!--  Home Page  -->
+    <string name="lis">قوائم</string>
+    <string name="maps">خرائط</string>
+    <string name="loans">القروض</string>
+    <string name="homeUser">اسم المستخدم يذهب هنا.</string>
+    <string name="hpInfo">معلومات الصفحة الرئيسية هنا.</string>
+    <string name="hpOthInfo">المعلومات النسبية الأخرى يذهب هنا.</string>
+
+    <!--  Listings -->
+    <string name="homeLis">الصفحة الرئيسية</string>
+    <string name="lisFavourites">المفضلة</string>
+    <string name="apToRent">تنطبق على الإيجار.</string>
+
+    <!--  Loan Page -->
+    <string name="loanHome">الصفحة الرئيسية</string>
+    <string name="_200Hint">€200</string>
+    <string name="reqLoanAm">طلب مبلغ القرض.</string>
+    <string name="requestBtn">طلب</string>
+
+
+</resources>
