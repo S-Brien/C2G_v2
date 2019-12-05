@@ -46,6 +46,7 @@ public class ListingsPage extends AppCompatActivity {
             }
         });
 
+
         ImageView profilePicture = findViewById(R.id.profilePicture);
         profilePicture.setOnClickListener(new View.OnClickListener(){
 

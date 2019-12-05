@@ -101,4 +101,15 @@
         android:textOff="@string/lisFavourites"
         android:textOn="@string/lisFavourites" />
 
+    <Button
+        android:id="@+id/ReviewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="87dp"
+        android:text="Write Review" />
+
 </RelativeLayout>
