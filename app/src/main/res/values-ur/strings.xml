@@ -61,6 +61,7 @@
     <string name="lDeposit">ڈپازٹ کی قسم:</string>
     <string name="addFav">پسندیدہ میں شامل کریں.</string>
     <string name="delFav">پسندیدہ سے ہٹائیں۔</string>
+    <string name="lisReview">اس کے بارے میں کچھ لکھیں</string>
 
 
     <!--  Home Page  -->
@@ -82,6 +83,16 @@
     <string name="_200Hint">€200</string>
     <string name="reqLoanAm">قرض کی رقم کی درخواست کریں۔</string>
     <string name="requestBtn">درخواست کریں</string>
+
+    <!-- Review Page Language changes -->
+    <string name="revName">نام</string>
+    <string name="revLandlord">زمیندار / سہارا</string>
+    <string name="revReview">جائزہ</string>
+    <string name="revAddReview">جائزہ شامل کریں</string>
+    <string name="revView">جائزہ دیکھیں</string>
+    <string name="revUpdate">ڈیٹا کو اپ ڈیٹ کریں</string>
+    <string name="revID">جائزہ شناخت</string>
+    <string name="revDel">حذف کریں</string>
 
 
 

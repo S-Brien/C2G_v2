@@ -60,6 +60,7 @@
     <string name="lDeposit">Deposit Type:</string>
     <string name="addFav">Add to favourites.</string>
     <string name="delFav">Remove from favourites.</string>
+    <string name="lisReview">Write Review</string>
 
     <!--  Home Page  -->
     <string name="lis">Listings</string>
@@ -79,6 +80,18 @@
     <string name="_200Hint">€200</string>
     <string name="reqLoanAm">Request loan amount.</string>
     <string name="requestBtn">Request</string>
+
+
+    <!-- Review Page Language changes -->
+    <string name="revName">Name</string>
+    <string name="revLandlord">Landlord/prop</string>
+    <string name="revReview">Review</string>
+    <string name="revAddReview">Add Review</string>
+    <string name="revView">View Reviews</string>
+    <string name="revUpdate">Update Data</string>
+    <string name="revID">Review ID</string>
+    <string name="revDel">Delete</string>
+
 
 
 </resources>

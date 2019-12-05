@@ -62,6 +62,7 @@
     <string name="lDeposit">存款类型：</string>
     <string name="addFav">加入“最喜欢的。</string>
     <string name="delFav">从收藏夹中删除。</string>
+    <string name="lisReview">发表评论</string>
 
 
     <!--  Home Page  -->
@@ -83,6 +84,16 @@
     <string name="_200Hint">€200</string>
     <string name="reqLoanAm">申请贷款金额。</string>
     <string name="requestBtn">请求</string>
+
+    <!-- Review Page Language changes -->
+    <string name="revName">名称</string>
+    <string name="revLandlord">房东/道具</string>
+    <string name="revReview">评论</string>
+    <string name="revAddReview">添加评论</string>
+    <string name="revView">查看评论</string>
+    <string name="revUpdate">更新资料</string>
+    <string name="revID">评论编号</string>
+    <string name="revDel">删除</string>
 
 
 </resources>

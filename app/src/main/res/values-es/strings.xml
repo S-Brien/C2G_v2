@@ -60,6 +60,7 @@
     <string name="lDeposit">Tipo de depósito:</string>
     <string name="addFav">Añadir a favoritos.</string>
     <string name="delFav">Eliminar de favoritos.</string>
+    <string name="lisReview">Escribir un comentario</string>
 
     <!--  Home Page  -->
     <string name="lis">Listados</string>
@@ -79,6 +80,16 @@
     <string name="_200Hint">€200</string>
     <string name="reqLoanAm">Solicitar monto del préstamo.</string>
     <string name="requestBtn">Solicitud</string>
+
+    <!-- Review Page Language changes -->
+    <string name="revName">Nombre</string>
+    <string name="revLandlord">Propietario / accesorio</string>
+    <string name="revReview">revisión</string>
+    <string name="revAddReview">Agregar una opinión</string>
+    <string name="revView">Agregar una opinión</string>
+    <string name="revUpdate">Actualizar datos</string>
+    <string name="revID">ID de revisión</string>
+    <string name="revDel">Borrar</string>
 
 
 

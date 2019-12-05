@@ -81,4 +81,20 @@
         android:layout_marginStart="113dp"
         android:layout_marginTop="235dp"
         android:text="@string/hpInfo" />
+
+    <TextView
+        android:id="@+id/helpTxt"
+        android:layout_width="220sp"
+        android:layout_height="45sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="568dp"
+        android:text="@string/helpSt"
+        android:textAlignment="center"
+        android:textColor="#cddc39"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </RelativeLayout>

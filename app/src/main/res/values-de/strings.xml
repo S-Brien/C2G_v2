@@ -61,6 +61,7 @@
     <string name="lDeposit">Einzahlungsart:</string>
     <string name="addFav">Zu Favoriten hinzufügen.</string>
     <string name="delFav">Von den Favoriten entfernen.</string>
+    <string name="lisReview">Eine Beurteilung schreiben</string>
 
 
     <!--  Home Page  -->
@@ -82,6 +83,16 @@
     <string name="_200Hint">€200</string>
     <string name="reqLoanAm">Darlehensbetrag anfordern.</string>
     <string name="requestBtn">Anfordern</string>
+
+    <!-- Review Page Language changes -->
+    <string name="revName">Name</string>
+    <string name="revLandlord">Vermieter / Objekt</string>
+    <string name="revReview">Rezension</string>
+    <string name="revAddReview">Bewertung hinzufügen</string>
+    <string name="revView">Bewertungen anzeigen</string>
+    <string name="revUpdate">Daten aktualisieren</string>
+    <string name="revID">ID überprüfen</string>
+    <string name="revDel">Löschen</string>
 
 
 

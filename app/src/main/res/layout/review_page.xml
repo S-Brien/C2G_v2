@@ -12,7 +12,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Name"
+        android:text="@string/revName"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Landlord/prop"
+        android:text="@string/revLandlord"
         android:id="@+id/textView2"
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Review"
+        android:text="@string/revReview"
         android:id="@+id/textView3"
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
@@ -71,7 +71,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Review"
+        android:text="@string/revAddReview"
         android:id="@+id/btnAddData"
         android:layout_below="@+id/textView3"
         android:layout_alignParentLeft="true"
@@ -80,7 +80,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ViewReviews"
+        android:text="@string/revView"
         android:id="@+id/btnViewData"
         android:layout_below="@+id/textView3"
         android:layout_toRightOf="@+id/btnAddData"
@@ -95,13 +95,13 @@
         android:layout_marginLeft="14dp"
         android:layout_toEndOf="@+id/btnViewData"
         android:layout_toRightOf="@+id/btnViewData"
-        android:text="Update Data" />
+        android:text="@string/revUpdate" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Review ID"
+        android:text="@string/revID"
         android:id="@+id/textView4"
         android:layout_below="@+id/btnAddData"
         android:layout_alignParentLeft="true"
@@ -120,11 +120,23 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Delete"
+        android:text="@string/revDel"
         android:id="@+id/btnDelete"
         android:layout_below="@+id/etID"
         android:layout_alignRight="@+id/etID"
         android:layout_alignEnd="@+id/etID" />
+
+    <TextView
+        android:id="@+id/helpTxt"
+        android:layout_width="220sp"
+        android:layout_height="45sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:text="@string/helpSt"
+        android:textAlignment="center"
+        android:textColor="#cddc39"
+        android:textSize="20sp"
+         />
 
 </RelativeLayout>
 

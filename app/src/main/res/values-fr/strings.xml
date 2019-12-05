@@ -61,6 +61,7 @@
     <string name="lDeposit">Type de dépôt:</string>
     <string name="addFav">Ajouter aux Favoris.</string>
     <string name="delFav">Supprimer des favoris.</string>
+    <string name="lisReview">Ecrire une critique</string>
 
 
     <!--  Home Page  -->
@@ -82,6 +83,16 @@
     <string name="_200Hint">€200</string>
     <string name="reqLoanAm">Demander le montant du prêt.</string>
     <string name="requestBtn">Demande</string>
+
+    <!-- Review Page Language changes -->
+    <string name="revName">prénom</string>
+    <string name="revLandlord">Propriétaire / prop</string>
+    <string name="revReview">La revue</string>
+    <string name="revAddReview">Ajouter un commentaire</string>
+    <string name="revView">Voir les avis</string>
+    <string name="revUpdate">Mise à jour des données</string>
+    <string name="revID">Identifiant de revue</string>
+    <string name="revDel">Supprimer</string>
 
 
 

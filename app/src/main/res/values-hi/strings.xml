@@ -63,6 +63,7 @@
     <string name="lDeposit">जमा प्रकार:</string>
     <string name="addFav">पसंदीदा में जोड़ें।</string>
     <string name="delFav">पसंदीदा से निकालें।</string>
+    <string name="lisReview">समीक्षा लिखें</string>
 
 
     <!--  Home Page  -->
@@ -84,6 +85,16 @@
     <string name="_200Hint">€200</string>
     <string name="reqLoanAm">ऋण राशि का अनुरोध करें।</string>
     <string name="requestBtn">निवेदन</string>
+
+    <!-- Review Page Language changes -->
+    <string name="revName">नाम</string>
+    <string name="revLandlord">मकान मालिक / प्रोप</string>
+    <string name="revReview">समीक्षा</string>
+    <string name="revAddReview">समीक्षा जोड़ें</string>
+    <string name="revView">समीक्षा देखें</string>
+    <string name="revUpdate">डेटा को अद्यतन करें</string>
+    <string name="revID">आईडी की समीक्षा करें</string>
+    <string name="revDel">हटाएं</string>
 
 
 

@@ -85,7 +85,7 @@
         android:layout_height="470dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="11dp"></ListView>
+        android:layout_marginBottom="50dp"></ListView>
 
     <ToggleButton
         android:id="@+id/faveToggle"
@@ -110,6 +110,18 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="76dp"
         android:layout_marginTop="87dp"
-        android:text="Write Review" />
+        android:text="@string/lisReview" />
+
+    <TextView
+        android:id="@+id/helpTxt"
+        android:layout_width="220sp"
+        android:layout_height="45sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="570dp"
+        android:text="@string/helpSt"
+        android:textAlignment="center"
+        android:textColor="#cddc39"
+        android:textSize="20sp"
+        />
 
 </RelativeLayout>

@@ -60,6 +60,7 @@
     <string name="lDeposit">نوع الوديعة:</string>
     <string name="addFav">أضف إلى المفضلة.</string>
     <string name="delFav">إزالة من المفضلة.</string>
+    <string name="lisReview">أكتب مراجعة</string>
 
     <!--  Home Page  -->
     <string name="lis">قوائم</string>
@@ -79,6 +80,16 @@
     <string name="_200Hint">€200</string>
     <string name="reqLoanAm">طلب مبلغ القرض.</string>
     <string name="requestBtn">طلب</string>
+
+    <!-- Review Page Language changes -->
+    <string name="revName">اسم</string>
+    <string name="revLandlord">المالك / دعامة</string>
+    <string name="revReview">إعادة النظر</string>
+    <string name="revAddReview">إضافة مراجعة</string>
+    <string name="revView">عرض مراجعات</string>
+    <string name="revUpdate">تحديث البيانات</string>
+    <string name="revID">مراجعة معرف</string>
+    <string name="revDel">حذف</string>
 
 
 </resources>
