@@ -72,6 +72,8 @@
     <string name="homeUser">用户名转到此处。</string>
     <string name="hpInfo">主页信息在这里。</string>
     <string name="hpOthInfo">其他相关信息在这里。</string>
+    <string name="homePageDesc">来吧是一款短期租赁/房屋应用程序，面向正在离开大学，工作/实习或面临类似住房问题的外国人的学生，它为低收入人士提供了潜在的难以负担的租赁押金的解决方案。 该应用程序旨在帮助学生和外国人在主要学院，大学和城市及其周围地区找到短期住宿，并使其设计尽可能使租房过程变得尽可能快捷和容易。</string>
+
 
 
     <!--  Listings -->
@@ -84,10 +86,10 @@
     <string name="_200Hint">€200</string>
     <string name="reqLoanAm">申请贷款金额。</string>
     <string name="requestBtn">请求</string>
-    <string name="update_email">Update Email</string>
-    <string name="enter_new_email_here">Enter new email here.</string>
-    <string name="homePageDesc">ComeToGo is a short-term rent/housing app aimed towards students who are leaving home for college/work/internships or for foreign nationals facing similar housing issues, it offers solutions to potentially unaffordable renting deposits for low-income individuals. This application is designed to help students and foreign nationals find short term accommodation in areas in and around major colleges, universities and cities as well this, it is designed so as to make the process of renting the accommodation as quick and easy as possible.</string>
-    <string name="loanDesc">At Come2Go, we understand the difficulties involved in organising the money necessary for moving away from home. This app offers to cover, or partially cover, the cost of a property\'s deposit for those who need it. Please make an application for a loan below.</string>
+    <string name="update_email">更新电邮</string>
+    <string name="enter_new_email_here">在此处输入新电子邮件。</string>
+    <string name="loanDesc">来吧是一款短期租赁/房屋应用程序，面向正在离开大学，工作/实习或面临类似住房问题的外国人的学生，它为低收入人士提供了潜在的难以负担的租赁押金的解决方案。 该应用程序旨在帮助学生和外国人在主要学院，大学和城市及其周围地区找到短期住宿，并使其设计尽可能使租房过程变得尽可能快捷和容易。</string>
+    <string name="loanRel">其他相关信息在这里。</string>
 
     <!-- Review Page Language changes -->
     <string name="revName">名称</string>

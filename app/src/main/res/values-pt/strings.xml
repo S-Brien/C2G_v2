@@ -70,6 +70,8 @@
     <string name="homeUser">Nome de usuário Vai aqui.</string>
     <string name="hpInfo">Informações da página inicial aqui.</string>
     <string name="hpOthInfo">Outras informações relativas vão aqui.</string>
+    <string name="homePageDesc">vem 2 vai va é um aplicativo de aluguel / moradia de curto prazo destinado a estudantes que estão saindo de casa para faculdade / trabalho / estágio ou para estrangeiros que enfrentam problemas de moradia semelhantes, oferecendo soluções para depósitos de aluguel potencialmente inacessíveis para pessoas de baixa renda. Este aplicativo foi desenvolvido para ajudar estudantes e estrangeiros a encontrar acomodações de curto prazo em áreas e nas principais faculdades, universidades e cidades, além disso, foi projetado para tornar o processo de aluguel da acomodação o mais rápido e fácil possível.</string>
+
 
 
     <!--  Listings -->
@@ -82,6 +84,10 @@
     <string name="_200Hint">€200</string>
     <string name="reqLoanAm">Solicitar valor do empréstimo.</string>
     <string name="requestBtn">Pedido</string>
+    <string name="update_email">Atualizar E-mail</string>
+    <string name="enter_new_email_here">Digite o novo email aqui.</string>
+    <string name="loanDesc">No vem 2 vai, entendemos as dificuldades envolvidas na organização do dinheiro necessário para sair de casa. Este aplicativo oferece para cobrir, ou parcialmente, o custo do depósito de uma propriedade para aqueles que precisam. Faça um pedido de empréstimo abaixo.</string>
+    <string name="loanRel">Outras informações relativas vão aqui.</string>
 
     <!-- Review Page Language changes -->
     <string name="revName">Nome</string>
@@ -93,10 +99,7 @@
     <string name="revID">ID da revisão</string>
     <string name="revDel">Excluir</string>
 
-    <string name="update_email">Update Email</string>
-    <string name="enter_new_email_here">Enter new email here.</string>
-    <string name="homePageDesc">ComeToGo is a short-term rent/housing app aimed towards students who are leaving home for college/work/internships or for foreign nationals facing similar housing issues, it offers solutions to potentially unaffordable renting deposits for low-income individuals. This application is designed to help students and foreign nationals find short term accommodation in areas in and around major colleges, universities and cities as well this, it is designed so as to make the process of renting the accommodation as quick and easy as possible.</string>
-    <string name="loanDesc">At Come2Go, we understand the difficulties involved in organising the money necessary for moving away from home. This app offers to cover, or partially cover, the cost of a property\'s deposit for those who need it. Please make an application for a loan below.</string>
+
 
 
 

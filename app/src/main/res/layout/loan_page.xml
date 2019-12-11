@@ -56,7 +56,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="86dp"
         android:layout_marginTop="28dp"
-        android:text="Other relative information goes here." />
+        android:text="@string/loanRel" />
 
     <Button
         android:id="@+id/mapPageButton3"
@@ -99,6 +99,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="346dp"
+        android:textColor="#cddc39"
         android:text="@string/reqLoanAm" />
 
     <Button
@@ -132,6 +133,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="212dp"
+        android:textColor="#cddc39"
         android:text="@string/loanDesc" />
 
 </RelativeLayout>

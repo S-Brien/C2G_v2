@@ -71,6 +71,8 @@
     <string name="homeUser">Benutzername Geht hier.</string>
     <string name="hpInfo">Startseite Informationen hier.</string>
     <string name="hpOthInfo">Andere relative Informationen finden Sie hier.</string>
+    <string name="homePageDesc">Komm 2 geh ist eine Kurzzeitmiet- / Wohnungs-App für Studierende, die zu Studien- / Arbeits- / Praktikumszwecken oder für Ausländer mit ähnlichen Wohnproblemen von zu Hause abreisen. Sie bietet Lösungen für möglicherweise unbezahlbare Mieteinlagen für Personen mit niedrigem Einkommen. Diese Anwendung wurde entwickelt, um Studenten und Ausländern zu helfen, kurzfristig eine Unterkunft in Gebieten in und um bedeutende Colleges, Universitäten und Städte zu finden. Sie wurde entwickelt, um den Prozess der Anmietung der Unterkunft so schnell und einfach wie möglich zu gestalten.</string>
+
 
 
     <!--  Listings -->
@@ -83,6 +85,11 @@
     <string name="_200Hint">€200</string>
     <string name="reqLoanAm">Darlehensbetrag anfordern.</string>
     <string name="requestBtn">Anfordern</string>
+    <string name="update_email">E-Mail aktualisieren</string>
+    <string name="enter_new_email_here">Geben Sie hier eine neue E-Mail-Adresse ein.</string>
+    <string name="loanDesc">Bei Come to go verstehen wir die Schwierigkeiten bei der Organisation des Geldes, das für den Umzug von zu Hause benötigt wird. Diese App bietet die Möglichkeit, die Kosten für die Kaution einer Immobilie für diejenigen, die sie benötigen, zu decken oder teilweise zu decken. Bitte beantragen Sie unten einen Kredit.</string>
+    <string name="loanRel">Andere relative Informationen finden Sie hier.</string>
+
 
     <!-- Review Page Language changes -->
     <string name="revName">Name</string>
@@ -93,10 +100,7 @@
     <string name="revUpdate">Daten aktualisieren</string>
     <string name="revID">ID überprüfen</string>
     <string name="revDel">Löschen</string>
-    <string name="update_email">Update Email</string>
-    <string name="enter_new_email_here">Enter new email here.</string>
-    <string name="homePageDesc">ComeToGo is a short-term rent/housing app aimed towards students who are leaving home for college/work/internships or for foreign nationals facing similar housing issues, it offers solutions to potentially unaffordable renting deposits for low-income individuals. This application is designed to help students and foreign nationals find short term accommodation in areas in and around major colleges, universities and cities as well this, it is designed so as to make the process of renting the accommodation as quick and easy as possible.</string>
-    <string name="loanDesc">At Come2Go, we understand the difficulties involved in organising the money necessary for moving away from home. This app offers to cover, or partially cover, the cost of a property\'s deposit for those who need it. Please make an application for a loan below.</string>
+
 
 
 

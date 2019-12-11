@@ -69,6 +69,8 @@
     <string name="homeUser">اسم المستخدم يذهب هنا.</string>
     <string name="hpInfo">معلومات الصفحة الرئيسية هنا.</string>
     <string name="hpOthInfo">المعلومات النسبية الأخرى يذهب هنا.</string>
+    <string name="homePageDesc">تعال 2 اذهب هو تطبيق إيجار / سكن قصير الأجل يستهدف الطلاب الذين يغادرون المنزل للالتحاق بالجامعة / العمل / التدريب الداخلي أو للمواطنين الأجانب الذين يواجهون مشكلات سكن مماثلة ، وهو يقدم حلولًا لودائع الإيجار المحتملة التي لا يمكن تحملها للأفراد ذوي الدخل المنخفض. تم تصميم هذا التطبيق لمساعدة الطلاب والمواطنين الأجانب في العثور على سكن قصير الأجل في مناطق داخل وحول الكليات والجامعات والمدن الرئيسية أيضًا ، تم تصميمه لجعل عملية استئجار السكن سريعة وسهلة قدر الإمكان.</string>
+
 
     <!--  Listings -->
     <string name="homeLis">الصفحة الرئيسية</string>
@@ -80,10 +82,10 @@
     <string name="_200Hint">€200</string>
     <string name="reqLoanAm">طلب مبلغ القرض.</string>
     <string name="requestBtn">طلب</string>
-    <string name="update_email">Update Email</string>
-    <string name="enter_new_email_here">Enter new email here.</string>
-    <string name="homePageDesc">ComeToGo is a short-term rent/housing app aimed towards students who are leaving home for college/work/internships or for foreign nationals facing similar housing issues, it offers solutions to potentially unaffordable renting deposits for low-income individuals. This application is designed to help students and foreign nationals find short term accommodation in areas in and around major colleges, universities and cities as well this, it is designed so as to make the process of renting the accommodation as quick and easy as possible.</string>
-    <string name="loanDesc">At Come2Go, we understand the difficulties involved in organising the money necessary for moving away from home. This app offers to cover, or partially cover, the cost of a property\'s deposit for those who need it. Please make an application for a loan below.</string>
+    <string name="update_email">تحديث البريد الإلكتروني</string>
+    <string name="enter_new_email_here">أدخل بريدًا إلكترونيًا جديدًا هنا.</string>
+    <string name="loanDesc">في عال 2 اذهب ، نحن نتفهم الصعوبات التي ينطوي عليها تنظيم الأموال اللازمة للابتعاد عن المنزل. يقدم هذا التطبيق لتغطية ، أو تغطية جزئية ، تكلفة إيداع الممتلكات لأولئك الذين يحتاجون إليها. يرجى تقديم طلب للحصول على قرض أدناه.</string>
+    <string name="loanRel">المعلومات النسبية الأخرى يذهب هنا.</string>
 
     <!-- Review Page Language changes -->
     <string name="revName">اسم</string>

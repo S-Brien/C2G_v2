@@ -110,7 +110,8 @@
         android:layout_marginStart="21dp"
         android:layout_marginTop="258dp"
         android:text="@string/homePageDesc"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textColor="#cddc39"/>
 
     <TextView
         android:id="@+id/helpTxt"
