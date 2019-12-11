@@ -36,10 +36,10 @@ public class DatabaseManager extends SQLiteOpenHelper {
 
     //Review table
     public static final String REVIEWS_TABLE = "review_table";
-    public static final String COL1 = "ID";
-    public static final String COL2 = "NAME";
-    public static final String COL3 = "property";
-    public static final String COL4 = "review";
+    public static final String REVIEWS_COL1 = "ID";
+    public static final String REVIEWS_COL2 = "NAME";
+    public static final String REVIEWS_COL3 = "property";
+    public static final String REVIEWS_COL4 = "review";
 
 
     public DatabaseManager(@Nullable Context context) {
@@ -218,9 +218,9 @@ public class DatabaseManager extends SQLiteOpenHelper {
     public boolean addReviewData(String name, String property, String review){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(COL2,name);
-        contentValues.put(COL3,property);
-        contentValues.put(COL3,review);
+        contentValues.put(REVIEWS_COL2,name);
+        contentValues.put(REVIEWS_COL3,property);
+        contentValues.put(REVIEWS_COL4,review);
 
         long result  = db.insert(REVIEWS_TABLE, null, contentValues);
 
@@ -240,10 +240,10 @@ public class DatabaseManager extends SQLiteOpenHelper {
     public boolean updateReviewData(String id, String name, String property, String review){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(COL1,id);
-        contentValues.put(COL2,name);
-        contentValues.put(COL3,property);
-        contentValues.put(COL4,review);
+        contentValues.put(REVIEWS_COL1,id);
+        contentValues.put(REVIEWS_COL2,name);
+        contentValues.put(REVIEWS_COL3,property);
+        contentValues.put(REVIEWS_COL4,review);
         db.update(REVIEWS_TABLE, contentValues, "ID = ?", new String[] {id});
         return true;
     }
