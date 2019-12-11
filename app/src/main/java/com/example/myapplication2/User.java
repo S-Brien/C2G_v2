@@ -5,17 +5,21 @@ public class User {
     private String username;
     private String password;
     private String email;
+    private String biography;
     private double balance;
+    private byte[] profilePicture;
     private int id;
 
     public User() {
     }
 
-    public User(int id, String username, String email, String password, Double balance) {
+    public User(int id, String username, String email, String password, Double balance, String biography, byte[] profilePicture) {
         this.username = username;
         this.password = password;
         this.email = email;
         this.balance = balance;
+        this.biography = biography;
+        this.profilePicture = profilePicture;
         this.id = id;
     }
 
@@ -57,5 +61,21 @@ public class User {
 
     public void setBalance(double balance) {
         this.balance = balance;
+    }
+
+    public String getBiography() {
+        return biography;
+    }
+
+    public void setBiography(String biography) {
+        this.biography = biography;
+    }
+
+    public byte[] getProfilePicture() {
+        return profilePicture;
+    }
+
+    public void setProfilePicture(byte[] profilePicture) {
+        this.profilePicture = profilePicture;
     }
 }

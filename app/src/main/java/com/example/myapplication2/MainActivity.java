@@ -5,12 +5,10 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
-import android.graphics.Paint;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -20,7 +18,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.parse.LogInCallback;
-import com.parse.Parse;
 import com.parse.ParseAnalytics;
 import com.parse.ParseException;
 import com.parse.ParseUser;
@@ -29,12 +26,6 @@ import com.parse.SignUpCallback;
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
-
-    //HARDCODED TEXT CANNOT BE TRANSLATED AUTOMATICALLY, PHASE OUT ALL HARDCODED TEXT BY
-    //PROJECT END BY REPLACING WITH @STRING METHOD.
-    //FIX FAVOURITE BUTTON
-    //Add the functionality to edit email and add biography to customer table and make the profile picture global.
-    //Make sure all buttons work
 
     Boolean signUpModeActive = true;
     TextView changeSignUpModeTextView;
@@ -174,7 +165,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     public void done(ParseException e) {
                         if (e == null) {
                             CUSTOMER_USERNAME = usernameEditText.getText().toString();
-                            myDB.insertData(usernameEditText.getText().toString(), emailEditText.getText().toString(), passwordEditText.getText().toString());
+                            myDB.insertAccountData(usernameEditText.getText().toString(), emailEditText.getText().toString(), passwordEditText.getText().toString());
                             Log.i("SignUp", "Successful");
                             Toast.makeText(MainActivity.this, "Registration Successful!", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), HomePage.class));
@@ -244,15 +235,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             @Override
             public void onClick(View view) {
                 showChangeLanguageDialog();
-            }
-        });
-
-        TextView textView = (TextView)findViewById(R.id.signTxt);
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-                startActivity(new Intent(getApplicationContext(), SignUp.class));
             }
         });
 

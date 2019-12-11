@@ -13,6 +13,7 @@ import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 import static com.example.myapplication2.FullListingInfo.faveList;
+import static com.example.myapplication2.ProfilePage.PROFILE_PICTURE;
 
 import java.util.ArrayList;
 
@@ -29,6 +30,7 @@ public class ListingsPage extends AppCompatActivity {
         setContentView(R.layout.listings_page);
 
 
+
         myListView = findViewById(R.id.myListView);
         faveListView = findViewById(R.id.faveListView);
 
@@ -37,12 +39,28 @@ public class ListingsPage extends AppCompatActivity {
 
         fillListView();
 
+        Button reviewButton = findViewById(R.id.ReviewButton);
+        reviewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), ReviewPage.class));
+            }
+        });
+
         Button homePageButton = findViewById(R.id.homePageButton);
         homePageButton.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), HomePage.class));
+            }
+        });
+
+        Button loanPageButton = findViewById(R.id.loanPageButton);
+        loanPageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), LoanPage.class));
             }
         });
 
@@ -69,9 +87,6 @@ public class ListingsPage extends AppCompatActivity {
                 }
             }
         });
-
-        //remember that some of these require no deposits etc
-
     }
 
     public void fillListView() {

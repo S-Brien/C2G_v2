@@ -42,8 +42,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_centerVertical="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginBottom="286dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="268dp"
         android:text="@string/lDescription" />
 
     <TextView
@@ -60,30 +60,30 @@
         android:id="@+id/textPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="71dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="203dp"
+        android:layout_toEndOf="@+id/textView6"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/textOwner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="71dp"
+        android:layout_marginStart="11dp"
         android:layout_marginTop="235dp"
+        android:layout_toEndOf="@+id/textView7"
         android:text="TextView" />
 
     <TextView
         android:id="@+id/textAddress"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="76dp"
+        android:layout_marginStart="6dp"
         android:layout_marginTop="266dp"
+        android:layout_toEndOf="@+id/textView9"
         android:text="TextView" />
 
     <TextView
@@ -92,8 +92,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginBottom="258dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="290dp"
         android:text="@string/lDeposit" />
 
     <ToggleButton
@@ -104,8 +105,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="56dp"
         android:text="ToggleButton"
-        android:textOff="@string/delFav"
-        android:textOn="@string/addFav" />
+        android:textOff="@string/addFav"
+        android:textOn="@string/delFav"/>
 
     <Button
         android:id="@+id/applyButton"
@@ -115,5 +116,24 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="112dp"
         android:text="@string/apToRent" />
+
+    <TextView
+        android:id="@+id/depositText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="6dp"
+        android:layout_toEndOf="@+id/textDescription"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/descriptionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="269dp"
+        android:layout_toEndOf="@+id/textView8"
+        android:text="TextView" />
 
 </RelativeLayout>

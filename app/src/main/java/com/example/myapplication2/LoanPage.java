@@ -14,6 +14,7 @@ import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import static com.example.myapplication2.MainActivity.CUSTOMER_USERNAME;
+import static com.example.myapplication2.ProfilePage.PROFILE_PICTURE;
 
 public class LoanPage extends AppCompatActivity {
 
@@ -27,6 +28,7 @@ public class LoanPage extends AppCompatActivity {
         setContentView(R.layout.loan_page);
         myDB = new DatabaseManager(this);
         balanceRequestEditText = findViewById(R.id.editLoan);
+
 
         Button requestLoanButton = findViewById(R.id.requestLoanButton);
         requestLoanButton.setOnClickListener(new View.OnClickListener() {
@@ -54,8 +56,9 @@ public class LoanPage extends AppCompatActivity {
             }
         });
 
-        Button loanPageButton = findViewById(R.id.homePageButton);
-        loanPageButton.setOnClickListener(new View.OnClickListener() {
+        Button homePageButton = findViewById(R.id.homePageButton);
+        homePageButton.setOnClickListener(new View.OnClickListener(){
+
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), HomePage.class));

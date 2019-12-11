@@ -14,8 +14,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-
 import java.util.ArrayList;
 
 import static com.example.myapplication2.FullListingInfo.applicationList;
@@ -25,22 +23,14 @@ import static com.example.myapplication2.ListingsPage.LISTING_ID;
 public class ProfilePage extends AppCompatActivity {
 
     public static final int PICK_IMAGE = 1;
+    public static Uri PROFILE_PICTURE = null;
     Intent intent;
-    TextView bio;
-    TextView usernameTest, usernameLabel, emailLabel, passwordLabel, editBalance;
-    EditText editBio, editUsernameField, editEmailField, editPasswordField;
+    TextView usernameLabel, emailLabel, editBalance, bio;
+    EditText editBio, editEmailField;
     ListView applicationListView;
-
-
-
-
-
+    ImageView avatar;
     int userID;
     User user;
-    String userUsername;
-    String userEmail;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,8 +39,6 @@ public class ProfilePage extends AppCompatActivity {
         displayUserInfo();
         fillApplicationList();
         applicationListView.setVisibility(View.VISIBLE);
-
-
 
         userID = getUserID();
 
@@ -72,7 +60,16 @@ public class ProfilePage extends AppCompatActivity {
 
 
 
+        Button updateEmailButton = findViewById(R.id.updateEmailButton);
+        updateEmailButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                updateEmail();
 
+            }
+        });
+
+        editEmailField = findViewById(R.id.editEmailField);
 
         TextView textV = (TextView)findViewById(R.id.helpTxt);
         textV.setOnClickListener(new View.OnClickListener() {
@@ -85,6 +82,58 @@ public class ProfilePage extends AppCompatActivity {
 
     }
 
+    private void updateEmail() {
+
+        DatabaseManager dbm = new DatabaseManager(this);
+        ArrayList<User> userArray = dbm.generateUserArray();
+
+        String updatedEmail;
+        updatedEmail = editEmailField.getText().toString();
+
+        for(User u : userArray){
+            if(CUSTOMER_USERNAME.equals(u.getUsername())){
+                user = u;
+                break;
+            }
+        }
+
+        dbm.editEmail(updatedEmail, user.getId());
+
+
+        finish();
+        overridePendingTransition(0, 0);
+        startActivity(getIntent());
+        overridePendingTransition(0, 0);
+
+    }
+
+    private void updateBio() {
+
+        DatabaseManager dbm = new DatabaseManager(this);
+        ArrayList<User> userArray = dbm.generateUserArray();
+
+        editBio = (EditText) findViewById(R.id.editBio);
+        bio = (TextView) findViewById(R.id.accountBio);
+
+        for(User u : userArray){
+            if(CUSTOMER_USERNAME.equals(u.getUsername())){
+                user = u;
+                break;
+            }
+        }
+
+        dbm.editBio(editBio.getText().toString(), user.getId());
+
+
+
+        finish();
+        overridePendingTransition(0, 0);
+        startActivity(getIntent());
+        overridePendingTransition(0, 0);
+
+    }
+
+
     protected void updateAvatar() {
 
         //Update Avatar
@@ -96,22 +145,23 @@ public class ProfilePage extends AppCompatActivity {
 
     }
 
-    protected void updateBio() {
-
-        editBio = (EditText) findViewById(R.id.editBio);
-        bio = (TextView) findViewById(R.id.accountBio);
-        bio.setText(editBio.getText().toString());
-
-    }
-
     @SuppressLint("MissingSuperCall")
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
 
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == PICK_IMAGE) {
-            ImageView avatar = findViewById(R.id.avatar);
-            Uri fullPhotoUri = data.getData();
-            avatar.setImageURI(fullPhotoUri);
+
+            avatar = findViewById(R.id.avatar);
+
+            System.out.println("TESTING PICTURE STUFF 1");
+
+            PROFILE_PICTURE = data.getData();
+            avatar.setImageURI(PROFILE_PICTURE);
+
+            System.out.println("TESTING PICTURE STUFF 2");
+
+            System.out.println("TESTING PICTURE STUFF 5");
+
         }
     }
 
@@ -127,8 +177,27 @@ public class ProfilePage extends AppCompatActivity {
             }
         }
 
+        userID = user.getId();
         username = user.getUsername();
         return username;
+
+    }
+
+    public String getUserBio(){
+
+        String bio;
+        DatabaseManager dbm = new DatabaseManager(this);
+        ArrayList<User>  userArrayList = dbm.generateUserArray();
+        for(User u : userArrayList){
+            if(CUSTOMER_USERNAME.equals(u.getUsername())){
+                user = u;
+                break;
+            }
+        }
+
+        userID = user.getId();
+        bio = user.getBiography();
+        return bio;
 
     }
 
@@ -184,8 +253,6 @@ public class ProfilePage extends AppCompatActivity {
     }
 
     public int getUserID(){
-
-        int id;
         DatabaseManager dbm = new DatabaseManager(this);
         Cursor result = dbm.getID();
 
@@ -202,6 +269,11 @@ public class ProfilePage extends AppCompatActivity {
 
         editBalance = findViewById(R.id.editBalance);
         editBalance.setText(getUserBalance().toString());
+
+        bio = findViewById(R.id.accountBio);
+        bio.setText(getUserBio());
+
+
 
     }
 

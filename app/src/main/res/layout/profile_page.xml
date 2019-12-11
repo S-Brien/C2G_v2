@@ -107,54 +107,87 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="250dp"
         android:text="@string/homeUser"
+        android:textAlignment="center"
         android:textSize="16sp" />
 
     <TextView
         android:id="@+id/emailGoesHere"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/updateAvatar"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="22dp"
+        android:layout_marginTop="24dp"
         android:layout_marginBottom="309dp"
         android:text="@string/proEmail"
-        android:textSize="16sp"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerVertical="true"
         android:layout_marginStart="21dp"
+        android:layout_marginTop="322dp"
         android:layout_marginBottom="259dp"
         android:text="@string/proBalance"
-        android:textSize="16sp"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/editBalance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerVertical="true"
         android:layout_marginStart="82dp"
+        android:layout_marginTop="322dp"
         android:layout_marginBottom="259dp"
         android:text="TextView"
-        android:textSize="16sp"/>
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="154dp"
+        android:layout_marginTop="350dp"
         android:layout_marginBottom="231dp"
         android:text="@string/proApplications"
-        android:textSize="16sp"/>
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/editEmailField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="259dp"
+        android:layout_marginEnd="26dp"
+        android:layout_toEndOf="@+id/emailGoesHere"
+        android:ems="10"
+        android:hint="@string/enter_new_email_here"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/updateEmailButton"
+        android:layout_width="102dp"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="267dp"
+        android:text="@string/update_email" />
 
 
 </RelativeLayout>

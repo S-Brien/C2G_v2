@@ -15,6 +15,7 @@ public class HomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_page);
 
+
         Button listingsPageButton = findViewById(R.id.listingsButton);
         listingsPageButton.setOnClickListener(new View.OnClickListener(){
 
@@ -40,8 +41,5 @@ public class HomePage extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), LoanPage.class));
             }
         });
-        //Other buttons to be implemented later.
-
-
     }
 }

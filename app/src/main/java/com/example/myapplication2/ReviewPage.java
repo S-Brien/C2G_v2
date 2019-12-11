@@ -12,17 +12,21 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ReviewPage extends AppCompatActivity {
-    DatabaseHelper peopleDB;
+    DatabaseManager myDB;
 
     Button btnAddData, btnViewData,btnUpdateData,btnDelete;
     EditText etName,etProp,etReview,etID;
+
+
+    //Fix edits
+    //Edit texts are writing to incorrect fields.
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.review_page);
 
-        peopleDB = new DatabaseHelper(this);
+        myDB = new DatabaseManager(this);
 
         etName = (EditText) findViewById(R.id.etNewName);
         etProp = (EditText) findViewById(R.id.etNewProp);
@@ -33,22 +37,22 @@ public class ReviewPage extends AppCompatActivity {
         etID = (EditText) findViewById(R.id.etID);
         btnDelete = (Button) findViewById(R.id.btnDelete);
 
-        AddData();
-        ViewData();
-        UpdateData();
-        DeleteData();
+        addData();
+        viewData();
+        updateData();
+        deleteData();
     }
 
-    public void AddData() {
+    public void addData() {
         btnAddData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 String name = etName.getText().toString();
-                String email = etProp.getText().toString();
-                String tvShow = etReview.getText().toString();
+                String property = etProp.getText().toString();
+                String review = etReview.getText().toString();
 
-                boolean insertData = peopleDB.addData(name, email, tvShow);
+                boolean insertData = myDB.addReviewData(name, property, review);
 
                 if (insertData == true) {
                     Toast.makeText(ReviewPage.this, "Data Successfully Inserted!", Toast.LENGTH_LONG).show();
@@ -59,11 +63,11 @@ public class ReviewPage extends AppCompatActivity {
         });
     }
 
-    public void ViewData(){
+    public void viewData(){
         btnViewData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Cursor data = peopleDB.showData();
+                Cursor data = myDB.showReviewData();
 
                 if (data.getCount() == 0) {
                     display("Error", "No Data Found.");
@@ -90,13 +94,13 @@ public class ReviewPage extends AppCompatActivity {
         builder.show();
     }
 
-    public void UpdateData(){
+    public void updateData(){
         btnUpdateData.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int temp = etID.getText().toString().length();
                 if (temp > 0) {
-                    boolean update = peopleDB.updateData(etID.getText().toString(), etName.getText().toString(),
+                    boolean update = myDB.updateReviewData(etID.getText().toString(), etName.getText().toString(),
                             etProp.getText().toString(), etReview.getText().toString());
                     if (update == true) {
                         Toast.makeText(ReviewPage.this, "Successfully Updated Data!", Toast.LENGTH_LONG).show();
@@ -110,13 +114,13 @@ public class ReviewPage extends AppCompatActivity {
         });
     }
 
-    public void DeleteData(){
+    public void deleteData(){
         btnDelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 int temp = etID.getText().toString().length();
                 if(temp > 0){
-                    Integer deleteRow = peopleDB.deleteData(etID.getText().toString());
+                    Integer deleteRow = myDB.deleteReviewData(etID.getText().toString());
                     if(deleteRow > 0){
                         Toast.makeText(ReviewPage.this, "Successfully Deleted The review!", Toast.LENGTH_LONG).show();
                     }else{
