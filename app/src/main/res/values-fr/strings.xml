@@ -41,8 +41,10 @@
     <string name="choosePass">Choisissez un mot de passe</string>
     <string name="sUp">S\'inscrire</string>
     <string name="helpSt">Aidez-moi</string>
+
+    <!-- AfterMail Page Language Changes -->
     <string name="afMsg">TMerci de nous avoir contacté, un membre de notre équipe sera avec vous dans les plus brefs délais pour répondre à votre requête. Merci d\'utiliser Viens 2 va!</string>
-    <string name="g2Profile">Aller à la page de profil</string>
+    <string name="g2Profile">Aller à la page Prêt</string>
     <string name="exitApp">Demande de sortie</string>
 
 

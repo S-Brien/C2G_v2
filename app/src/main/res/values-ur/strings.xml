@@ -41,8 +41,10 @@
     <string name="choosePass">خفیہ کوڈ کا انتخاب کیجیئے</string>
     <string name="sUp">سائن اپ</string>
     <string name="helpSt">مدد</string>
+
+    <!-- AfterMail Page Language Changes -->
     <string name="afMsg">ہم سے رابطہ کرنے کے لئے آپ کا شکریہ ، ہماری ٹیم کا ایک ممبر جلد ہی آپ کے سوال کا جواب دینے کے لئے آپ کے ساتھ ہوگا۔ آو 2 جاؤ استعمال کرنے کے لئے آپ کا </string>
-    <string name="g2Profile">پروفائل کے صفحے پر جائیں</string>
+    <string name="g2Profile">لون کے صفحے پر جائیں</string>
     <string name="exitApp">ایگزٹ ایپلی کیشن</string>
 
 

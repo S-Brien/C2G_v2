@@ -43,7 +43,7 @@
 
     <!-- AfterMail Page Language Changes -->
     <string name="afMsg">Gracias por contactarnos, un miembro de nuestro equipo estará con usted en breve para responder su consulta. ¡Gracias por usar Ven2ir!</string>
-    <string name="g2Profile">Ir a la página de perfil</string>
+    <string name="g2Profile">Ir a la página de préstamos</string>
     <string name="exitApp">Exit Application</string>
 
     <!-- Help Page -->

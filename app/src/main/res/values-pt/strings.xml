@@ -40,8 +40,10 @@
     <string name="choosePass">Escolha a senha</string>
     <string name="sUp">Inscrever-se</string>
     <string name="helpSt">Socorro</string>
+
+    <!-- AfterMail Page Language Changes -->
     <string name="afMsg">Obrigado por entrar em contato, um membro de nossa equipe entrará em contato com você em breve para responder sua pergunta. Obrigado por usar o vem 2 vai!</string>
-    <string name="g2Profile">Ir para a página Perfil</string>
+    <string name="g2Profile">Ir para a página Empréstimo</string>
     <string name="exitApp">Sair da aplicação</string>
 
 

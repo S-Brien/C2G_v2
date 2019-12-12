@@ -43,7 +43,7 @@
 
     <!-- AfterMail Page Language Changes -->
     <string name="afMsg">Thank you for contacting us, a member of our team will be with you shortly to answer your query. Thank you for using Come2Go!</string>
-    <string name="g2Profile">Go to Profile page</string>
+    <string name="g2Profile">Go to Loan page</string>
     <string name="exitApp">Exit application</string>
 
     <!-- Help Page -->

@@ -33,7 +33,7 @@ public class AfterMail extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                startActivity(new Intent(getApplicationContext(), ProfilePage.class));
+                startActivity(new Intent(getApplicationContext(), LoanPage.class));
             }
         });
 
