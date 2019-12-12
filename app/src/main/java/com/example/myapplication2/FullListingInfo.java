@@ -34,6 +34,13 @@ public class FullListingInfo extends AppCompatActivity {
         listingList = dbm.getAllPropertyData();
         setInfo(listingList.get(LISTING_ID));
 
+        initializeButtons();
+
+
+    }
+
+    private void initializeButtons() {
+
         applyButton = findViewById(R.id.applyButton);
         applyButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -3,50 +3,55 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
+    android:background="#595959"
     android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
     tools:context="com.example.myapplication2.ReviewPage">
+
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/revName"
         android:id="@+id/textView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="38dp" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="38dp"
+        android:text="@string/revName"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#2196F3" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/revLandlord"
         android:id="@+id/textView2"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/revReview"
-        android:id="@+id/textView3"
-        android:layout_below="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:text="@string/revLandlord"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#2196F3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/revReview"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#2196F3" />
 
     <EditText
+        android:id="@+id/etNewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/etNewName"
         android:layout_alignBottom="@+id/textView"
-        android:layout_toRightOf="@+id/textView"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_toRightOf="@+id/textView" />
 
     <EditText
         android:id="@+id/etNewProp"
@@ -62,32 +67,32 @@
         android:layout_toRightOf="@+id/textView" />
 
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/etNewReview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/textView3"
-        android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_toRightOf="@+id/textView3"
-        android:layout_toEndOf="@+id/textView3" />
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/textView3"
+        android:layout_toRightOf="@+id/textView3" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/revAddReview"
         android:id="@+id/btnAddData"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/revView"
-        android:id="@+id/btnViewData"
         android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/revAddReview" />
+
+    <Button
+        android:id="@+id/btnViewData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_toEndOf="@+id/btnAddData"
         android:layout_toRightOf="@+id/btnAddData"
-        android:layout_toEndOf="@+id/btnAddData" />
+        android:text="@string/revView" />
 
     <Button
         android:id="@+id/btnUpdateData"
@@ -101,33 +106,34 @@
         android:text="@string/revUpdate" />
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/revID"
-        android:id="@+id/textView4"
         android:layout_below="@+id/btnAddData"
+        android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:text="@string/revID"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#2196F3" />
 
     <EditText
+        android:id="@+id/etID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/etID"
         android:layout_alignTop="@+id/textView4"
-        android:layout_toRightOf="@+id/textView4"
-        android:layout_alignRight="@+id/btnUpdateData"
         android:layout_alignEnd="@+id/btnUpdateData"
+        android:layout_alignRight="@+id/btnUpdateData"
+        android:layout_toRightOf="@+id/textView4"
         android:hint="Use to Update or Delete" />
 
     <Button
+        android:id="@+id/btnDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/revDel"
-        android:id="@+id/btnDelete"
         android:layout_below="@+id/etID"
+        android:layout_alignEnd="@+id/etID"
         android:layout_alignRight="@+id/etID"
-        android:layout_alignEnd="@+id/etID" />
+        android:text="@string/revDel" />
 
     <TextView
         android:id="@+id/helpTxt"
@@ -137,9 +143,8 @@
         android:layout_marginTop="550dp"
         android:text="@string/helpSt"
         android:textAlignment="center"
-        android:textColor="#cddc39"
-        android:textSize="20sp"
-         />
+        android:textColor="#2196F3"
+        android:textSize="20sp" />
 
 </RelativeLayout>
 

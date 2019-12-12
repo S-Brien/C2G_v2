@@ -15,6 +15,10 @@ public class AfterMail extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_after_mail);
 
+        initializeButtons();
+    }
+
+    private void initializeButtons() {
 
         Button btnEx = (Button)findViewById(R.id.btnExit);
         btnEx.setOnClickListener(

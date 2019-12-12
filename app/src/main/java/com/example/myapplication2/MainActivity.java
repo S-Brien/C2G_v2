@@ -212,6 +212,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
         myDB = new DatabaseManager(this);
+        initializeButtons();
+
+
+
+    }
+
+    private void initializeButtons() {
 
         //--------------PARSE SIGN-UP STUFF
 

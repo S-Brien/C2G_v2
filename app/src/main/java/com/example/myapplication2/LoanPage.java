@@ -6,15 +6,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
 
 import static com.example.myapplication2.MainActivity.CUSTOMER_USERNAME;
-import static com.example.myapplication2.ProfilePage.PROFILE_PICTURE;
+
 
 public class LoanPage extends AppCompatActivity {
 
@@ -29,7 +30,10 @@ public class LoanPage extends AppCompatActivity {
         myDB = new DatabaseManager(this);
         balanceRequestEditText = findViewById(R.id.editLoan);
 
+        initializeButtons();
+    }
 
+    private void initializeButtons() {
         Button requestLoanButton = findViewById(R.id.requestLoanButton);
         requestLoanButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -65,7 +69,13 @@ public class LoanPage extends AppCompatActivity {
             }
         });
 
-
+        TextView helpPageButton = findViewById(R.id.helpTxt);
+        helpPageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), HelpPage.class));
+            }
+        });
     }
 
     public void makeLoan(){

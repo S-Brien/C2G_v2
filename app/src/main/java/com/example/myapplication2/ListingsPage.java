@@ -9,6 +9,7 @@ import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Switch;
+import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,8 +29,7 @@ public class ListingsPage extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listings_page);
-
-
+        initializeButtons();
 
         myListView = findViewById(R.id.myListView);
         faveListView = findViewById(R.id.faveListView);
@@ -39,6 +39,10 @@ public class ListingsPage extends AppCompatActivity {
 
         fillListView();
 
+
+    }
+
+    private void initializeButtons() {
         Button reviewButton = findViewById(R.id.ReviewButton);
         reviewButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,6 +78,13 @@ public class ListingsPage extends AppCompatActivity {
             }
         });
 
+        TextView helpPageButton = findViewById(R.id.helpTxt);
+        helpPageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), HelpPage.class));
+            }
+        });
 
         ToggleButton toggle = (ToggleButton) findViewById(R.id.faveToggle);
         toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
