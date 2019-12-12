@@ -41,7 +41,13 @@ public class ProfilePage extends AppCompatActivity {
         applicationListView.setVisibility(View.VISIBLE);
 
         userID = getUserID();
+        initializeButtons();
 
+
+
+    }
+
+    private void initializeButtons() {
         Button avatarUpdater = findViewById(R.id.updateAvatar);
         avatarUpdater.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,7 +85,6 @@ public class ProfilePage extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), HelpPage.class));
             }
         });
-
     }
 
     private void updateEmail() {
