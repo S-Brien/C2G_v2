@@ -32,6 +32,52 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     DatabaseManager myDB;
     public static String CUSTOMER_USERNAME;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        loadLocale();
+        setContentView(R.layout.activity_main);
+
+        myDB = new DatabaseManager(this);
+
+        //--------------PARSE SIGN-UP STUFF
+
+        changeSignUpModeTextView = findViewById(R.id.changeSignUpModeTextView);
+        changeSignUpModeTextView.setOnClickListener(this);
+        ParseAnalytics.trackAppOpenedInBackground(getIntent());
+
+        //---------------------------------
+
+
+
+        //change action bar
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle(getResources().getString(R.string.app_name));
+
+
+        //-----------BUTTONS
+
+        Button changeLang = findViewById(R.id.changeMyLang);
+        changeLang.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showChangeLanguageDialog();
+            }
+        });
+
+        TextView textV = (TextView)findViewById(R.id.helpTxt);
+        textV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                startActivity(new Intent(getApplicationContext(), HelpPage.class));
+            }
+        });
+
+        //---------------------------
+
+    }
+
     private void showChangeLanguageDialog() {
         final String[] listItems = {"français", "हिंदी", "اردو", "Deutsche", "Português" , "中文", "Español", "عربى", "English"};
         AlertDialog.Builder mBuilder = new AlertDialog.Builder(MainActivity.this);
@@ -205,51 +251,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        loadLocale();
-        setContentView(R.layout.activity_main);
 
-        myDB = new DatabaseManager(this);
-
-        //--------------PARSE SIGN-UP STUFF
-
-        changeSignUpModeTextView = findViewById(R.id.changeSignUpModeTextView);
-        changeSignUpModeTextView.setOnClickListener(this);
-        ParseAnalytics.trackAppOpenedInBackground(getIntent());
-
-        //---------------------------------
-
-
-
-        //change action bar
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle(getResources().getString(R.string.app_name));
-
-
-        //-----------BUTTONS
-
-        Button changeLang = findViewById(R.id.changeMyLang);
-        changeLang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showChangeLanguageDialog();
-            }
-        });
-
-        TextView textV = (TextView)findViewById(R.id.helpTxt);
-        textV.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v)
-            {
-                startActivity(new Intent(getApplicationContext(), HelpPage.class));
-            }
-        });
-
-        //---------------------------
-
-    }
 }
 
 
