@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
@@ -142,11 +143,15 @@ public class ProfilePage extends AppCompatActivity {
     protected void updateAvatar() {
 
         //Update Avatar
-        intent = new Intent();
-        intent.setType("image/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE);
-
+        try {
+            intent = new Intent();
+            intent.setType("image/*");
+            intent.setAction(Intent.ACTION_GET_CONTENT);
+            startActivityForResult(Intent.createChooser(intent, "Select Picture"), PICK_IMAGE);
+        }catch(RuntimeException e){
+            Toast.makeText(this, "Please pick an image!", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
     }
 
@@ -158,7 +163,13 @@ public class ProfilePage extends AppCompatActivity {
 
             avatar = findViewById(R.id.avatar);
 
-            PROFILE_PICTURE = data.getData();
+            try {
+
+                PROFILE_PICTURE = data.getData();
+            }catch(RuntimeException e){
+                Toast.makeText(this, "Please pick an image!", Toast.LENGTH_SHORT).show();
+                return;
+            }
             avatar.setImageURI(PROFILE_PICTURE);
 
         }

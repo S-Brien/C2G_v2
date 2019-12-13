@@ -81,14 +81,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        Button byPassButton = findViewById(R.id.bypassLogin);
-        byPassButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                CUSTOMER_USERNAME = "Test1";
-                startActivity(new Intent(getApplicationContext(), HomePage.class));
-            }
-        });
         //---------------------------
 
     }

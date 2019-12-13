@@ -14,7 +14,6 @@ import static com.example.myapplication2.FullListingInfo.faveList;
 
 public class DatabaseManager extends SQLiteOpenHelper {
 
-    Context context;
 
     public static final String DATABASE_NAME = "App Database";
 
@@ -49,7 +48,6 @@ public class DatabaseManager extends SQLiteOpenHelper {
     public DatabaseManager(@Nullable Context context) {
         super(context, DATABASE_NAME, null, 1);
 
-        this.context = context;
 
     }
 
@@ -59,6 +57,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
         db.execSQL("CREATE TABLE [" + ACCOUNTS_TABLE + "](ID INTEGER PRIMARY KEY AUTOINCREMENT, USERNAME TEXT, EMAIL TEXT, PASSWORD TEXT, BALANCE INTEGER, BIOGRAPHY TEXT, PROFILEPICTURE BLOB)");
         db.execSQL("CREATE TABLE [" + LISTINGS_TABLE + "](ID INTEGER PRIMARY KEY AUTOINCREMENT, ADDRESS VARCHAR, PRICE VARHCAR, IMAGE BLOB, TYPE TEXT, DESCRIPTION TEXT, FAVOURITE INTEGER)");
         db.execSQL("CREATE TABLE [" + REVIEWS_TABLE + "](ID INTEGER PRIMARY KEY AUTOINCREMENT, NAME TEXT, PROPERTY TEXT, REVIEW TEXT)");
+
 
     }
 
@@ -221,6 +220,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
 
 
     // REVIEW TABLE METHODS
+
     public boolean addReviewData(String name, String property, String review){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
@@ -236,6 +236,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
             return true;
         }
     }
+
 
     public Cursor showReviewData(){
         SQLiteDatabase db = this.getWritableDatabase();
