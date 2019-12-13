@@ -1,4 +1,4 @@
-package com.example.Come2Go;
+package com.example.myapplication2;
 
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-import static com.example.Come2Go.ListingsPage.LISTING_ID;
+import static com.example.myapplication2.ListingsPage.LISTING_ID;
 
 public class FullListingInfo extends AppCompatActivity {
 

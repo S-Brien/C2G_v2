@@ -1,17 +1,20 @@
-package com.example.Come2Go;
+package com.example.myapplication2;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-import static com.example.Come2Go.FullListingInfo.faveList;
+import static com.example.myapplication2.FullListingInfo.faveList;
 
 public class DatabaseManager extends SQLiteOpenHelper {
+
+    Context context;
 
     public static final String DATABASE_NAME = "App Database";
 
@@ -33,6 +36,7 @@ public class DatabaseManager extends SQLiteOpenHelper {
     public static final String listings_COL_4 = "Type";
     public static final String listings_COL_5 = "Description";
     public static final String listings_COL_6 = "Favourite";
+    public static final String listings_COL_7 = "Image";
 
     //Review table
     public static final String REVIEWS_TABLE = "review_table";
@@ -44,6 +48,8 @@ public class DatabaseManager extends SQLiteOpenHelper {
 
     public DatabaseManager(@Nullable Context context) {
         super(context, DATABASE_NAME, null, 1);
+
+        this.context = context;
 
     }
 

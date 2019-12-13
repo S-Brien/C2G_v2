@@ -5,7 +5,7 @@
 //Licensed under the Apache License, Version 2.0 (the "License");
 //http://www.apache.org/licenses/LICENSE-2.0
 
-package com.example.Come2Go;
+package com.example.myapplication2;
 
 import android.Manifest;
 import android.app.AlertDialog;

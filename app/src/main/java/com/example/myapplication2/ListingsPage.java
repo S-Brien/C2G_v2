@@ -1,4 +1,4 @@
-package com.example.Come2Go;
+package com.example.myapplication2;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,7 +12,7 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
-import static com.example.Come2Go.FullListingInfo.faveList;
+import static com.example.myapplication2.FullListingInfo.faveList;
 
 import java.util.ArrayList;
 

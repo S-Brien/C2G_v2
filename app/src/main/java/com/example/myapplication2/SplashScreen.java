@@ -1,4 +1,4 @@
-package com.example.Come2Go;
+package com.example.myapplication2;
 
 import androidx.appcompat.app.AppCompatActivity;
 

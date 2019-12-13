@@ -1,4 +1,4 @@
-package com.example.Come2Go;
+package com.example.myapplication2;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -16,9 +16,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 
-import static com.example.Come2Go.FullListingInfo.applicationList;
-import static com.example.Come2Go.MainActivity.CUSTOMER_USERNAME;
-import static com.example.Come2Go.ListingsPage.LISTING_ID;
+import static com.example.myapplication2.FullListingInfo.applicationList;
+import static com.example.myapplication2.MainActivity.CUSTOMER_USERNAME;
+import static com.example.myapplication2.ListingsPage.LISTING_ID;
 
 public class ProfilePage extends AppCompatActivity {
 
@@ -158,14 +158,8 @@ public class ProfilePage extends AppCompatActivity {
 
             avatar = findViewById(R.id.avatar);
 
-            System.out.println("TESTING PICTURE STUFF 1");
-
             PROFILE_PICTURE = data.getData();
             avatar.setImageURI(PROFILE_PICTURE);
-
-            System.out.println("TESTING PICTURE STUFF 2");
-
-            System.out.println("TESTING PICTURE STUFF 5");
 
         }
     }

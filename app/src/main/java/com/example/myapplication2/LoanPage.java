@@ -1,4 +1,4 @@
-package com.example.Come2Go;
+package com.example.myapplication2;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-import static com.example.Come2Go.MainActivity.CUSTOMER_USERNAME;
+import static com.example.myapplication2.MainActivity.CUSTOMER_USERNAME;
 
 
 public class LoanPage extends AppCompatActivity {
@@ -84,7 +84,12 @@ public class LoanPage extends AppCompatActivity {
         ArrayList<User> userArray = myDB.generateUserArray();
 
         Double loanAmount;
-        loanAmount = Double.parseDouble(balanceRequestEditText.getText().toString());
+        try {
+            loanAmount = Double.parseDouble(balanceRequestEditText.getText().toString());
+        }catch(NumberFormatException e){
+            Toast.makeText(this, "Please submit a number!", Toast.LENGTH_SHORT).show();
+            return;
+        }
 
         for(User u : userArray){
             if(CUSTOMER_USERNAME.equals(u.getUsername())){
