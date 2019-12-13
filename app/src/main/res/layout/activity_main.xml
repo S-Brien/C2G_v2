@@ -123,14 +123,14 @@
         app:layout_constraintTop_toBottomOf="@+id/usernameEditText" />
 
     <Button
-        android:id="@+id/mapBtn"
+        android:id="@+id/bypassLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="141dp"
-        android:layout_marginEnd="139dp"
-        android:text="Map" />
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="440dp"
+        android:text="Enter."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

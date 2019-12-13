@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.myapplication2">
+    package="com.example.Come2Go">
     <!-- list of android permissions needed/ -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -9,23 +9,24 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".ParseServer"
+        android:name="com.example.Come2Go.ParseServer"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".FullListingInfo" />
-        <activity android:name=".LoanPage" />
-        <activity android:name=".ReviewPage" />
-        <activity android:name=".HelpPage" />
-        <activity android:name=".HomePage" />
-        <activity android:name=".ListingsPage" />
-        <activity android:name=".ProfilePage" />
-        <activity android:name=".AfterMail" />
-        <activity android:name=".SplashScreen">
+        <activity android:name="com.example.Come2Go.MainActivity"></activity>
+        <activity android:name="com.example.Come2Go.FullListingInfo" />
+        <activity android:name="com.example.Come2Go.LoanPage" />
+        <activity android:name="com.example.Come2Go.ReviewPage" />
+        <activity android:name="com.example.Come2Go.HelpPage" />
+        <activity android:name="com.example.Come2Go.HomePage" />
+        <activity android:name="com.example.Come2Go.ListingsPage" />
+        <activity android:name="com.example.Come2Go.ProfilePage" />
+        <activity android:name="com.example.Come2Go.AfterMail" />
+        <activity android:name="com.example.Come2Go.Map" />
+        <activity android:name="com.example.Come2Go.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

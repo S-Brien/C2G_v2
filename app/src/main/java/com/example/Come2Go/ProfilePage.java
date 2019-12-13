@@ -1,4 +1,4 @@
-package com.example.myapplication2;
+package com.example.Come2Go;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -16,9 +16,9 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 
-import static com.example.myapplication2.FullListingInfo.applicationList;
-import static com.example.myapplication2.MainActivity.CUSTOMER_USERNAME;
-import static com.example.myapplication2.ListingsPage.LISTING_ID;
+import static com.example.Come2Go.FullListingInfo.applicationList;
+import static com.example.Come2Go.MainActivity.CUSTOMER_USERNAME;
+import static com.example.Come2Go.ListingsPage.LISTING_ID;
 
 public class ProfilePage extends AppCompatActivity {
 

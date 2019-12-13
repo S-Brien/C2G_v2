@@ -1,4 +1,4 @@
-package com.example.myapplication2;
+package com.example.Come2Go;
 
 import android.util.Log;
 import java.io.UnsupportedEncodingException;

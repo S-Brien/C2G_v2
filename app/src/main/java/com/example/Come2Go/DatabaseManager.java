@@ -1,4 +1,4 @@
-package com.example.myapplication2;
+package com.example.Come2Go;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -9,7 +9,7 @@ import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
 
-import static com.example.myapplication2.FullListingInfo.faveList;
+import static com.example.Come2Go.FullListingInfo.faveList;
 
 public class DatabaseManager extends SQLiteOpenHelper {
 

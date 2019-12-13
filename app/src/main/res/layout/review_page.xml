@@ -8,7 +8,7 @@
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
-    tools:context="com.example.myapplication2.ReviewPage">
+    tools:context="com.example.Come2Go.ReviewPage">
 
     <TextView
         android:id="@+id/textView"

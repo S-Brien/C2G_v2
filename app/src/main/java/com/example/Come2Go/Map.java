@@ -1,4 +1,4 @@
-package com.example.myapplication2;
+package com.example.Come2Go;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -14,7 +14,6 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
-import androidx.fragment.app.FragmentActivity;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Map extends AppCompatActivity implements OnMapReadyCallback{

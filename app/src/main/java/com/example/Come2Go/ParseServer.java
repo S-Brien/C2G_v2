@@ -1,4 +1,4 @@
-package com.example.myapplication2;
+package com.example.Come2Go;
 
 import android.app.Application;
 import com.parse.Parse;

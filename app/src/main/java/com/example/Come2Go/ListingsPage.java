@@ -1,4 +1,4 @@
-package com.example.myapplication2;
+package com.example.Come2Go;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,13 +8,11 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import androidx.appcompat.app.AppCompatActivity;
-import static com.example.myapplication2.FullListingInfo.faveList;
-import static com.example.myapplication2.ProfilePage.PROFILE_PICTURE;
+import static com.example.Come2Go.FullListingInfo.faveList;
 
 import java.util.ArrayList;
 

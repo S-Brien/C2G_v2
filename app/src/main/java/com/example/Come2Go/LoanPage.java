@@ -1,4 +1,4 @@
-package com.example.myapplication2;
+package com.example.Come2Go;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
-import static com.example.myapplication2.MainActivity.CUSTOMER_USERNAME;
+import static com.example.Come2Go.MainActivity.CUSTOMER_USERNAME;
 
 
 public class LoanPage extends AppCompatActivity {
@@ -92,6 +93,7 @@ public class LoanPage extends AppCompatActivity {
             }
         }
 
+        Toast.makeText(this, "Loan Approved!", Toast.LENGTH_SHORT).show();
         myDB.addBalance(loanAmount, user.getId());
 
     }

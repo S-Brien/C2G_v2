@@ -1,8 +1,6 @@
-package com.example.myapplication2;
+package com.example.Come2Go;
 
 import android.content.Context;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.graphics.BitmapFactory;
 import android.view.LayoutInflater;
 import android.view.View;

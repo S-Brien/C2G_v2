@@ -1,4 +1,4 @@
-package com.example.myapplication2;
+package com.example.Come2Go;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -52,6 +52,14 @@ public class HomePage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(), HelpPage.class));
+            }
+        });
+
+        Button mapPageButton = findViewById(R.id.mapPageButton);
+        mapPageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Map.class));
             }
         });
 
